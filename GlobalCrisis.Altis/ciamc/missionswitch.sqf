@@ -58,10 +58,9 @@ switch _mission do {
 		waitUntil {vehicle player distance off1 < 5};
 		titleText ["Looks like they're asleep.. Try honking at them. (Use H)","PLAIN DOWN"];
 		honkEH = false;
-		(findDisplay 46) displayAddEventHandler ["KeyDown",{
+		_honk = (findDisplay 46) displayAddEventHandler ["KeyDown",{
 		if (_this select 1 == 0x23) then {
-		honkEH = true; // == Have to use global variable because local == private var to scope.
-		publicVariable "_honkEH";
+		honkEH = true; // == Have to use global variable because local var == private var to scope.
 		playSound3D ["a3\sounds_f\vehicles\soft\noises\horn_big_car.wss",vehicle player];
 		} else {
 		false;
@@ -72,5 +71,15 @@ switch _mission do {
 		_offgrp = group off1;
 		_offgrp addVehicle (vehicle player);
 		(units _offgrp) orderGetin true;
+		waitUntil {(vehicle player) emptyPositions "cargo" == 0};
+		(units _offgrp) joinSilent (group player);
+		(findDisplay 46) displayRemoveEventHandler ["KeyDown",_honk]; // == Remove Honk EH.
+		// == Car task succeded
+		_car setTaskState "Succeeded";
+		_ath = player createSimpleTask ["ath"];
+		_ath setSimpleTaskDescription ["Alright, here's the deal - after that drone strike, we've got to go close up and clean up. Verify your targets, kill the remaining forces and move out again.","Sweep Athira - Verify, kill, leave","Athira"];
+		_ath setSimpleTaskDestination (getmarkerpos "athirasweep");
+		_ath setTaskState "assigned";
+		player setCurrentTask _ath;
 	};
 };
