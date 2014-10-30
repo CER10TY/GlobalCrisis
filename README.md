@@ -12,10 +12,14 @@ Welcome to Altis. Welcome to the CIA.
 Mission Requirements
 ======
 
-Community Base Addons for ArmA3 (http://forums.bistudio.com/showthread.php?178224-CBA-Community-Base-Addons-ARMA-3)
+Community Base Addons for ArmA3 (http://forums.bistudio.com/showthread.php?178224-CBA-Community-Base-Addons-ARMA-3) 
+
 Niko's USA Uniforms Mega Pack (http://forums.bistudio.com/showthread.php?181389-Niko-s-Uniforms-Mega-Packs&highlight=Niko+USA) 
+
 Alternative CSAT Forces by TheEvanCat (http://forums.bistudio.com/showthread.php?177257-The-CSAT-Modification-Project-%28Release%29) *1
+
 Toadie's Small Arms - HLC AK (http://forums.bistudio.com/showthread.php?172850-Toadie-s-SmallArms-and-Animations-for-Arma3) *2
+
 RobertHammers' M4/M16 Pack (http://forums.bistudio.com/showthread.php?167618-RH-M4-M16-pack)
 
 *1 Requires an additional custom addon that is provided in the download (said addon replaces standard weaponry with AKs)
