@@ -1,0 +1,182 @@
+// == Loadouts for various characters
+// == Dariush Gilani - Main Character
+comment "Exported from Arsenal by tryteyker";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "Niko_USA_AOR1Tan";
+for "_i" from 1 to 3 do {this addItemToUniform "16Rnd_9x19_FMJFT_Mag";};
+this addVest "V_BandollierB_khk";
+for "_i" from 1 to 4 do {this addItemToVest "hlc_30Rnd_762x39_b_ak";};
+for "_i" from 1 to 2 do {this addItemToVest "HandGrenade";};
+for "_i" from 1 to 2 do {this addItemToVest "Chemlight_green";};
+this addItemToVest "SmokeShell";
+this addHeadgear "H_Watchcap_cbr";
+this addGoggles "G_Squares_Tinted";
+
+comment "Add weapons";
+this addWeapon "Rangefinder";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "B_UavTerminal";
+
+comment "Set identity";
+this setFace "PersianHead_A3_01";
+this setSpeaker "Male01ENGB";
+
+
+// ==
+// Foot Soldier
+comment "Exported from Arsenal by tryteyker";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "Niko_USA_McamAOR2";
+this addItemToUniform "FirstAidKit";
+this addItemToUniform "SmokeShell";
+for "_i" from 1 to 2 do {this addItemToUniform "30Rnd_556x45_Stanag";};
+for "_i" from 1 to 2 do {this addItemToUniform "16Rnd_9x19_FMJFT_Mag";};
+this addVest "Niko_USA_PlateCarrierH_AOR2";
+this addItemToVest "SmokeShellGreen";
+this addItemToVest "SmokeShellOrange";
+this addItemToVest "SmokeShellPurple";
+for "_i" from 1 to 2 do {this addItemToVest "Chemlight_green";};
+for "_i" from 1 to 2 do {this addItemToVest "30Rnd_556x45_Stanag";};
+this addItemToVest "16Rnd_9x19_FMJFT_Mag";
+for "_i" from 1 to 8 do {this addItemToVest "RH_30Rnd_556x45_Mk262";};
+for "_i" from 1 to 3 do {this addItemToVest "HandGrenade";};
+for "_i" from 1 to 2 do {this addItemToVest "SmokeShell";};
+this addBackpack "B_AssaultPack_dgtl";
+for "_i" from 1 to 6 do {this addItemToBackpack "30Rnd_556x45_Stanag";};
+for "_i" from 1 to 4 do {this addItemToBackpack "16Rnd_9x19_FMJP_Mag";};
+for "_i" from 1 to 4 do {this addItemToBackpack "SmokeShell";};
+for "_i" from 1 to 4 do {this addItemToBackpack "HandGrenade";};
+for "_i" from 1 to 4 do {this addItemToBackpack "Chemlight_green";};
+for "_i" from 1 to 2 do {this addItemToBackpack "Chemlight_red";};
+for "_i" from 1 to 4 do {this addItemToBackpack "SmokeShellBlue";};
+
+comment "Add weapons";
+this addWeapon "RH_M16A4";
+this addPrimaryWeaponItem "RH_sakerb";
+this addPrimaryWeaponItem "acc_pointer_IR";
+this addPrimaryWeaponItem "RH_ta31rco";
+this addWeapon "hgun_P07_F";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "ItemGPS";
+
+// ==
+// CIA Prop
+
+comment "Exported from Arsenal by tryteyker";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "U_BG_Guerilla2_3";
+this addItemToUniform "FirstAidKit";
+this addItemToUniform "SmokeShell";
+this addItemToUniform "30Rnd_556x45_Stanag";
+this addVest "V_TacVestIR_blk";
+this addItemToVest "APERSTripMine_Wire_Mag";
+this addItemToVest "ClaymoreDirectionalMine_Remote_Mag";
+this addItemToVest "SmokeShellGreen";
+this addItemToVest "SmokeShellOrange";
+this addItemToVest "SmokeShellPurple";
+for "_i" from 1 to 2 do {this addItemToVest "Chemlight_green";};
+for "_i" from 1 to 2 do {this addItemToVest "30Rnd_556x45_Stanag";};
+for "_i" from 1 to 3 do {this addItemToVest "16Rnd_9x19_FMJFT_Mag";};
+this addHeadgear "H_Bandanna_khk_hs";
+this addGoggles "G_Bandanna_blk";
+
+comment "Add weapons";
+this addWeapon "RH_M16A4";
+this addPrimaryWeaponItem "RH_saker";
+this addWeapon "hgun_P07_F";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "ItemGPS";
+
+// == Mission Giver
+
+comment "Exported from Arsenal by tryteyker";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "Niko_USA_MARPAT";
+this addItemToUniform "FirstAidKit";
+for "_i" from 1 to 3 do {this addItemToUniform "30Rnd_556x45_Stanag";};
+this addVest "Niko_USA_PlateCarrierH_M81";
+for "_i" from 1 to 2 do {this addItemToVest "16Rnd_9x21_Mag";};
+for "_i" from 1 to 2 do {this addItemToVest "HandGrenade";};
+for "_i" from 1 to 2 do {this addItemToVest "B_IR_Grenade";};
+this addItemToVest "SmokeShell";
+this addItemToVest "SmokeShellGreen";
+for "_i" from 1 to 2 do {this addItemToVest "Chemlight_green";};
+this addBackpack "B_AssaultPack_rgr";
+this addHeadgear "H_Booniehat_khk_hs";
+this addGoggles "G_Bandanna_aviator";
+
+comment "Add weapons";
+this addWeapon "RH_M4A1_ris";
+this addPrimaryWeaponItem "muzzle_snds_M";
+this addPrimaryWeaponItem "acc_flashlight";
+this addPrimaryWeaponItem "RH_eotech553";
+this addWeapon "hgun_P07_F";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+
+comment "Set identity";
+this setFace "AfricanHead_03";
+this setSpeaker "Male11ENG";

@@ -1,0 +1,74 @@
+#include "ciamc\defines.hpp"
+#include "ciamc\ciamc.hpp"
+#include "ciamc\drone.hpp"
+
+onLoadMission = "Welcome, Dariush Gilani.";
+onLoadMissionTime = 1;
+loadScreen = "img\CIAlogo.paa";
+author = "tryteyker";
+
+class CfgHints
+{
+	class MissionIntro
+	{
+		displayName = "Mission Introduction - Global Crisis";
+		class MissionIntro1
+		{
+			displayName = "Welcoming Statement";
+			displayNameShort = "Welcome to ""Global Crisis""";
+			description = "Welcome, %11. Whilst you enjoy the boat and helicopter ride to the base, allow me to lay out what this mission is about. In this mission, you'll be seeing the introduction of ISI Agent Dariush Gilani.  There are laptops spread throughout the mission that will give you Intel about him and other important characters.";
+			tip = "The base at the AAC Airfield will allow you to restock your ammunition as well as acquire weapons.";
+			arguments[] = {profileName};
+			image = "";
+			noImage = false;
+		};
+	};
+	class CIAIntro 
+	{
+		displayName = "Introduction to the CIA";
+		class Dariush
+		{
+			displayName = "Introduction: Dariush Gilani";
+			displayNameShort = "Introducing Dariush Gilani";
+			description = "Dariush Gilani is an ISI Operative hailing from Pakistan. He was picked up by the ISI during peacetime, where Pakistan had flourishing relations with the world. He is noted for being calm and thoroughly careful in the field, leaving nothing behind. Nowadays he has reached the global stage, working together with Agencies on an international level.";
+			tip = "";
+			arguments[] = {};
+			image = "img\dariush.paa";
+			noImage = false;
+		};
+		class GlobalRelations
+		{
+			displayName = "Global Relations";
+			displayNameShort = "Current Global Relations (Pt. 1 / 4)";
+			description = "Pakistan and the United States of America have entered an alliance, permanently smoothing relations after the DEVGRU/CIA performed a paramilitary operation on Pakistan's soil to kill Osama bin Laden. Iran is secluded from the world, performing a variety of operations on Altian and Stratian soil.";
+			tip = "Whilst Iran may be secluded and seem very out-of-touch, they still possess high-end technology and are a force to be reckoned with.";
+			arguments[] = {};
+			image = "";
+			noImage = false;
+		};
+		class NavMC
+		{
+			displayName = "Navigation: Mission Control";
+			displayNameShort = "Navigating Mission Control";
+			description = "You will have a fixed list of missions available in the list once you open Mission Control. The interface is simple and to the point. To accept a mission, hold Shift and press Enter. You will then receive tasks accordingly. To exit Mission Control, simply press ESC once.";
+			tip = "By completing tasks you will unlock more missions in the MC.";
+			arguments[] = {};
+			image ="img\CIALogo.paa";
+			noImage = false;
+		};
+	};
+};
+
+class CfgUnitInsignia
+{
+	class CIA
+	{
+		displayName = "Central Intelligence Agency - Paramilitary Forces";
+		texture = "img\cialogo.paa";
+	};
+	class DEVGRU
+	{
+		displayName = "United States Naval Special Warfare Development Group";
+		texture = "img\DEVGRUInsignia.paa";
+	};
+};
