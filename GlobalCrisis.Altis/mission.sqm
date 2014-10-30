@@ -112,6 +112,7 @@ class Mission
 					id=0;
 					side="WEST";
 					vehicle="B_Soldier_F";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
@@ -123,9 +124,10 @@ class Mission
 				items=3;
 				class Item0
 				{
-					position[]={12905.32,0.20175931,3072.572};
+					position[]={12905.32,0.20382355,3072.572};
 					type="GETIN";
 					expCond="player in boat";
+					expActiv="[[""MissionIntro"",""MissionIntro1""]] call BIS_fnc_advHint;";
 					synchronizations[]={5};
 					class Effects
 					{
@@ -558,7 +560,7 @@ class Mission
 				};
 				class Item1
 				{
-					position[]={12738.834,0.1417788,4497.5923};
+					position[]={12733.057,0.12807316,4498.3472};
 					type="TR UNLOAD";
 					class Effects
 					{
@@ -895,13 +897,12 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={11554.48,23.682585,11974.099};
-					azimut=1018.8956;
+					position[]={11550.542,23.734306,11949.092};
+					azimut=894.19299;
 					special="NONE";
 					id=33;
 					side="WEST";
 					vehicle="B_Soldier_F";
-					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
 					init="[this,""CIA""] call bis_fnc_setunitinsignia";

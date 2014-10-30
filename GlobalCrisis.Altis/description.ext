@@ -22,6 +22,15 @@ class CfgHints
 			image = "";
 			noImage = false;
 		};
+		class Intro2
+			displayName = "Welcome: Altis";
+			displayNameShort "Welcome to Altis";
+			description = "Altis - a beatiful island, or hellhole. Pick your poison, because with the Revolutionary Guard out and about this whole place might turn dark real quick. You'll find that the Guard mostly keep to themselves - there are outposts far and few between, and the civilians mostly go about their daily lives unharmed.";
+			tip = "Altis covers an area of 270.5 square km; You won't get anywhere long distance without a car, or maybe a helicopter.";
+			arguments[] = {};
+			image = "";
+			noImage = false;
+		};
 	};
 	class CIAIntro 
 	{
