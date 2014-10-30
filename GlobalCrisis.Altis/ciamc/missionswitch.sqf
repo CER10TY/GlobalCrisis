@@ -33,9 +33,44 @@ switch _mission do {
 			};
 			};
 		waitUntil {!alive general && !alive VIP};
+		"africanwedding" setMarkerAlpha 0;
 		_afrwedd setTaskState "SUCCEEDED";
 		["TaskSucceeded",["","African Wedding"]] call BIS_fnc_showNotification;
 		_r = player addRating 999999; // To prevent player going rogue if he hit the civie mass.
-		// == Second part (Riding through Athira)
+		// == Adding second part 
+		_listbox = 1500;
+		_id = lbAdd [_listbox,"Athira - Scan for remaining hostile contacts"];
+		lbSetData [_listbox,_id,"athirasweep"];
+	};
+	case "athirasweep":
+	{
+		// == Sweeping through Athira
+		"athirasweep" setmarkeralpha 1;
+		_car = player createSimpleTask ["car"];
+		_car setSimpleTaskDescription ["To start the mission, enter a car and pick up the DEVGRU Team outside.","Enter car and pick up team","Car"];
+		_car setSimpleTaskDestination (getposATL car1);
+		["TaskAssigned",["","Athiran Sweep"]] call BIS_fnc_showNotification;
+		_car setTaskState "Assigned";
+		player setCurrentTask _car;
+		waitUntil {vehicle player != player};
+		titleText ["Now pick up the team waiting outside!","PLAIN DOWN"];
+		_car setSimpleTaskDestination (getposATL off1);
+		waitUntil {vehicle player distance off1 < 5};
+		titleText ["Looks like they're asleep.. Try honking at them. (Use H)","PLAIN DOWN"];
+		honkEH = false;
+		(findDisplay 46) displayAddEventHandler ["KeyDown",{
+		if (_this select 1 == 0x23) then {
+		honkEH = true; // == Have to use global variable because local == private var to scope.
+		publicVariable "_honkEH";
+		playSound3D ["a3\sounds_f\vehicles\soft\noises\horn_big_car.wss",vehicle player];
+		} else {
+		false;
+		}}];
+		waitUntil {honkEH};
+		honkEH = ""; // Terminate var in some way (well whatever it's really just useless)
+		hint "Moving forward.";
+		_offgrp = group off1;
+		_offgrp addVehicle (vehicle player);
+		(units _offgrp) orderGetin true;
 	};
 };

@@ -9,3 +9,4 @@ boat addAction ["Throw out light", {0 = [_this select 2] spawn {deleteVehicle li
 [] execVM "sound\ambient\birds.sqf";
 // == Mission marker alpha.
 "africanwedding" setMarkerAlpha 0;
+"athirasweep" setmarkeralpha 0;
