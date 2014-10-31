@@ -28,4 +28,4 @@ RobertHammers' M4/M16 Pack (http://forums.bistudio.com/showthread.php?167618-RH-
 Current Version:
 ===
 
-0.6 STABLE
+0.75 STABLE
