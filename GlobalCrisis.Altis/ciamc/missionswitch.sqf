@@ -67,7 +67,6 @@ switch _mission do {
 		}}];
 		waitUntil {honkEH};
 		honkEH = ""; // Terminate var in some way (well whatever it's really just useless)
-		hint "Moving forward.";
 		_offgrp = group off1;
 		_offgrp addVehicle (vehicle player);
 		(units _offgrp) orderGetin true;

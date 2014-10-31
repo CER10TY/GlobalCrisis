@@ -55,6 +55,16 @@ class CfgHints
 			arguments[] = {};
 			image = "";
 			noImage = false;
+			class GlobalRelations2
+			{
+				displayName = "Global Relations";
+				displayNameShort = "Current Global Relations (Pt. 2/ 4)";
+				description = "With the Resistance fighters taking up arms left behind during previous wars, the Revolutionary Guard faces a tough enemy when engaging in firefights. Officially, however, these fighters are not endorsed by the CIA nor ISI. The Resistance has won somewhat significant ground recently, but has to employ guerrilla tactics.";
+				tip = "Look around the Resistance's temporary HQ - valuable goods may be found.";
+				arguments[] = {};
+				image = "";
+				noImage = false;
+			};
 		};
 		class NavMC
 		{
