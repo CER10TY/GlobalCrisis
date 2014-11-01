@@ -31,4 +31,5 @@ Development
 Current version:
 
 0.92 DEV
+
 Latest revision 01/NOV/2014 01:50 AM
