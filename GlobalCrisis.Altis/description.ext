@@ -49,7 +49,7 @@ class CfgHints
 		class GlobalRelations
 		{
 			displayName = "Global Relations";
-			displayNameShort = "Current Global Relations (Pt. 1 / 4)";
+			displayNameShort = "Current Global Relations (Pt. 1/4)";
 			description = "Pakistan and the United States of America have entered an alliance, permanently smoothing relations after the DEVGRU/CIA performed a paramilitary operation on Pakistan's soil to kill Osama bin Laden. Iran is secluded from the world, performing a variety of operations on Altian and Stratian soil.";
 			tip = "Whilst Iran may be secluded and seem very out-of-touch, they still possess high-end technology and are a force to be reckoned with.";
 			arguments[] = {};
@@ -58,9 +58,19 @@ class CfgHints
 			class GlobalRelations2
 			{
 				displayName = "Global Relations";
-				displayNameShort = "Current Global Relations (Pt. 2/ 4)";
+				displayNameShort = "Current Global Relations (Pt. 2/4)";
 				description = "With the Resistance fighters taking up arms left behind during previous wars, the Revolutionary Guard faces a tough enemy when engaging in firefights. Officially, however, these fighters are not endorsed by the CIA nor ISI. The Resistance has won somewhat significant ground recently, but has to employ guerrilla tactics.";
 				tip = "Look around the Resistance's temporary HQ - valuable goods may be found.";
+				arguments[] = {};
+				image = "";
+				noImage = false;
+			};
+			class GlobalRelations3
+			{
+				displayName = "Global Relations";
+				displayNameShort = "Current Global Relations (Pt. 3/4)";
+				description = "Resistance fighters have independently established themselves as a force on the ground, and as such have been included in global political talks when the topics on meetups shift to Altis. This usually happens behind closed doors, with no government to ever acknowledge these fighters in public. However, as is common for such a resistance force, they lack political representatives and are missing out on the global playing field.";
+				tip = "";
 				arguments[] = {};
 				image = "";
 				noImage = false;
@@ -74,6 +84,16 @@ class CfgHints
 			tip = "By completing tasks you will unlock more missions in the MC.";
 			arguments[] = {};
 			image ="img\CIALogo.paa";
+			noImage = false;
+		};
+		class Drones
+		{
+			displayName = "Equipment: Drones"
+			displayNameShort = "Drones as Equipment";
+			description = "By now you will have used drones already. These unmanned flying objects are immensely useful when on a manhunt, however large scale it is. With Thermal Vision they can spot out enemy combatants in a matter of seconds, and eliminate them provided they have missiles equipped. This makes town sweeps a simple task when drones are used properly.";
+			tip = "The drone above Athira is always accessible provided you have a handheld Terminal.";
+			arguments[] = {};
+			image = "";
 			noImage = false;
 		};
 	};

@@ -15,6 +15,8 @@ switch _mission do {
 		player setCurrentTask _uavp;
 		waitUntil {"B_UavTerminal" in (assignedItems player)};
 		_uavp setTaskState "SUCCEEDED";
+		// == Enable drone, set position.
+		[ciadrone] execVM "drone.sqf";
 		_afrwedd = player createSimpleTask ["afrwed"];
 		_afrwedd setSimpleTaskDescription ["This is a straight-forward mission. A high profile target is meeting with the local garrison commander in Athira, so this is the time to strike. Be vigilant, as the meeting may have already ended when you connect, so both parties may be scattered throughout Athira. Keep an eye out for a Hatchback, as that is the VIP's car. Civilian casualties are expected.", "Drone Strike - Athira", "Drone Strike"];
 		_afrwedd setSimpleTaskDestination (getmarkerPos "africanwedding");
@@ -77,8 +79,15 @@ switch _mission do {
 		_car setTaskState "Succeeded";
 		_ath = player createSimpleTask ["ath"];
 		_ath setSimpleTaskDescription ["Alright, here's the deal - after that drone strike, we've got to go close up and clean up. Verify your targets, kill the remaining forces and move out again.","Sweep Athira - Verify, kill, leave","Athira"];
-		_ath setSimpleTaskDestination (getmarkerpos "athirasweep");
+		_ath setSimpleTaskDestination (getmarkerpos "dism");
 		_ath setTaskState "assigned";
 		player setCurrentTask _ath;
+		waitUntil {player distance (getmarkerpos "dism") < 10};
+		titleText ["Alright, let's dismount here and get going on foot.","PLAIN DOWN"];
+		_ath setSimpleTaskDestination (getmarkerpos "athirasweep");
+		waitUntil {athsweep};
+		titleText ["Alright, Athira is clear! Let's mount back up and get back to base.","PLAIN DOWN"};
+		_ath setTaskState "SUCCEEDED";
+		["TaskSucceeded",["","Athiran Sweep"]] call BIS_fnc_showNotification;
 	};
 };
