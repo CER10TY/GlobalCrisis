@@ -1,6 +1,7 @@
 // Mission Control Switch 
 
 _mission = _this select 0;
+_sel = _this select 1;
 
 switch _mission do {
 	case "athiradrone":
@@ -39,10 +40,8 @@ switch _mission do {
 		_afrwedd setTaskState "SUCCEEDED";
 		["TaskSucceeded",["","African Wedding"]] call BIS_fnc_showNotification;
 		_r = player addRating 999999; // To prevent player going rogue if he hit the civie mass.
-		// == Adding second part 
-		_listbox = 1500;
-		_id = lbAdd [_listbox,"Athira - Scan for remaining hostile contacts"];
-		lbSetData [_listbox,_id,"athirasweep"];
+		// == Adding second part
+		["athirasweep"] execVM "ciamc\add-mission.sqf";
 	};
 	case "athirasweep":
 	{
@@ -57,9 +56,8 @@ switch _mission do {
 		waitUntil {vehicle player != player};
 		titleText ["Now pick up the team waiting outside!","PLAIN DOWN"];
 		_car setSimpleTaskDestination (getposATL off1);
-		waitUntil {vehicle player distance off1 < 5};
+		waitUntil {vehicle player distance off1 < 15};
 		titleText ["Looks like they're asleep.. Try honking at them. (Use H)","PLAIN DOWN"];
-		honkEH = false;
 		_honk = (findDisplay 46) displayAddEventHandler ["KeyDown",{
 		if (_this select 1 == 0x23) then {
 		honkEH = true; // == Have to use global variable because local var == private var to scope.
@@ -68,7 +66,7 @@ switch _mission do {
 		false;
 		}}];
 		waitUntil {honkEH};
-		honkEH = ""; // Terminate var in some way (well whatever it's really just useless)
+		//honkEH = ""; // Terminate var in some way (well whatever it's really just useless)
 		_offgrp = group off1;
 		_offgrp addVehicle (vehicle player);
 		(units _offgrp) orderGetin true;
@@ -86,7 +84,7 @@ switch _mission do {
 		titleText ["Alright, let's dismount here and get going on foot.","PLAIN DOWN"];
 		_ath setSimpleTaskDestination (getmarkerpos "athirasweep");
 		waitUntil {athsweep};
-		titleText ["Alright, Athira is clear! Let's mount back up and get back to base.","PLAIN DOWN"};
+		titleText ["Alright, Athira is clear! Let's mount back up and get back to base.","PLAIN DOWN"];
 		_ath setTaskState "SUCCEEDED";
 		["TaskSucceeded",["","Athiran Sweep"]] call BIS_fnc_showNotification;
 	};
