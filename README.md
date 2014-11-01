@@ -23,6 +23,7 @@ Toadie's Small Arms - HLC AK (http://forums.bistudio.com/showthread.php?172850-T
 RobertHammers' M4/M16 Pack (http://forums.bistudio.com/showthread.php?167618-RH-M4-M16-pack)
 
 *1 Requires an additional custom addon that is provided in the download (said addon replaces standard weaponry with AKs)
+
 *2 May require additional addons to be download (ASDG JointRails, HLC Core), download links are provided in the topic linked.
 
 Development
