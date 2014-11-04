@@ -14,6 +14,3 @@ boat addAction ["Throw out light", {0 = [_this select 2] spawn {deleteVehicle li
 // == Global variables.
 honkEH = false;
 athsweep = false;
-
-// == Add first mission 
-["athirastrike"] execVM "ciamc\add-mission.sqf";

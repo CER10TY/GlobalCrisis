@@ -2,7 +2,8 @@
 
 _mission = _this select 0;
 _sel = _this select 1;
-(findDisplay 46) displayRemoveAllEventHandlers "KeyDown";
+_ctrl = dialog_control_cia_mc;
+(findDisplay 46) displayRemoveEventHandler ["KeyDown",_ctrl];
 
 switch _mission do {
 	case "athiradrone":
@@ -18,7 +19,7 @@ switch _mission do {
 		waitUntil {"B_UavTerminal" in (assignedItems player)};
 		_uavp setTaskState "SUCCEEDED";
 		// == Enable drone, set position.
-		[ciadrone] execVM "drone.sqf";
+		_droneScript_PartOne = [ciadrone] execVM "drone.sqf";
 		_afrwedd = player createSimpleTask ["afrwed"];
 		_afrwedd setSimpleTaskDescription ["This is a straight-forward mission. A high profile target is meeting with the local garrison commander in Athira, so this is the time to strike. Be vigilant, as the meeting may have already ended when you connect, so both parties may be scattered throughout Athira. Keep an eye out for a Hatchback, as that is the VIP's car. Civilian casualties are expected.", "Drone Strike - Athira", "Drone Strike"];
 		_afrwedd setSimpleTaskDestination (getmarkerPos "africanwedding");
@@ -43,6 +44,12 @@ switch _mission do {
 		_r = player addRating 999999; // To prevent player going rogue if he hit the civie mass.
 		// == Adding second part
 		["athirasweep"] execVM "ciamc\add-mission.sqf";
+		sleep 1;
+		player connectTerminalToUAV objNull;
+		// == Removing stationary part of drone.
+		waitUntil {isNull (getConnectedUAV player)};
+		terminate _droneScript_PartOne;
+		_droneScript_PartTwo = [ciadrone] execVM "dronerot.sqf";
 	};
 	case "athirasweep":
 	{
