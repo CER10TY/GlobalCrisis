@@ -13,7 +13,7 @@ case "athirasweep":
 	waitUntil {dialog};
 	_listbox = 1500;
 	lbDelete [_listbox,0];
-	_id = lbAdd [_listbox,"Athira - Scan for remaining hostile contacts"];
+	_id = lbAdd [_listbox,"Athira - Scan for contacts"];
 	lbSetData [_listbox,_id,"athirasweep"];
 };
 };

@@ -2,6 +2,7 @@
 
 _mission = _this select 0;
 _sel = _this select 1;
+(findDisplay 46) displayRemoveAllEventHandlers "KeyDown";
 
 switch _mission do {
 	case "athiradrone":
@@ -50,10 +51,10 @@ switch _mission do {
 		_car = player createSimpleTask ["car"];
 		_car setSimpleTaskDescription ["To start the mission, enter a car and pick up the DEVGRU Team outside.","Enter car and pick up team","Car"];
 		_car setSimpleTaskDestination (getposATL car1);
-		["TaskAssigned",["","Athiran Sweep"]] call BIS_fnc_showNotification;
-		_car setTaskState "Assigned";
+		_missnot = ["TaskAssigned",["","Athiran Sweep"]] call BIS_fnc_showNotification; // Shows twice for inexplicable reason.
+		_car setTaskState "ASSIGNED";
 		player setCurrentTask _car;
-		waitUntil {vehicle player != player};
+		waitUntil {vehicle player != player && _missnot};
 		titleText ["Now pick up the team waiting outside!","PLAIN DOWN"];
 		_car setSimpleTaskDestination (getposATL off1);
 		waitUntil {vehicle player distance off1 < 15};
