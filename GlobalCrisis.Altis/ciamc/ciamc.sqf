@@ -2,5 +2,5 @@
 disableSerialization;
 createDialog "TRT_CIAMC";
 waitUntil {dialog};
-[["CIAIntro","NavMC"]] call BIS_fnc_advHint;
+[["Mission","NavMC"]] call BIS_fnc_advHint;
 findDisplay 46 displayAddEventHandler ["KeyDown",{if (_this select 1 == 0x1C && _this select 2) then { nul = [lbData [1500,lbCurSel 1500],lbCurSEl 1500] execVM "ciamc\missionswitch.sqf";}}];

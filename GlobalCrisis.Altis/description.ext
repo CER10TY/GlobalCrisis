@@ -9,7 +9,7 @@ author = "tryteyker";
 
 class CfgHints
 {
-	class MissionIntro
+	class Mission
 	{
 		displayName = "Mission Introduction - Global Crisis";
 		class MissionIntro1
@@ -32,10 +32,6 @@ class CfgHints
 			image = "";
 			noImage = false;
 		};
-	};
-	class CIAIntro 
-	{
-		displayName = "Introduction to the CIA";
 		class Dariush
 		{
 			displayName = "Introduction: Dariush Gilani";
