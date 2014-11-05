@@ -108,3 +108,16 @@ class CfgUnitInsignia
 		texture = "img\DEVGRUInsignia.paa";
 	};
 };
+
+class CfgIdentities
+{
+	class Dariush
+	{
+		name = "Dariush Gilani";
+		nameSound = "Ghost";
+		face = "PersianHead_A3_01";
+		glasses = "G_Squares_Tinted";
+		speaker = "Male01ENGB";
+		pitch = 0.9;
+	};
+};

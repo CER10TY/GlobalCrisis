@@ -77,6 +77,7 @@ switch _mission do {
 		//honkEH = ""; // Terminate var in some way (well whatever it's really just useless)
 		_offgrp = group off1;
 		_offgrp addVehicle (vehicle player);
+		{_x enableAI "MOVE"} foreach (units _offgrp);
 		(units _offgrp) orderGetin true;
 		waitUntil {(vehicle player) emptyPositions "cargo" == 0};
 		(units _offgrp) joinSilent (group player);

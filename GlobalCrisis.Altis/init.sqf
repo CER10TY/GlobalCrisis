@@ -1,7 +1,7 @@
 // == Environmental placement.
 [] execVM "missionintro.sqf";
 // == AddAction for boat.
-boat addAction ["Throw out light", {0 = [_this select 2] spawn {deleteVehicle lightpad; boat removeAction (_this select 0)}}];
+//boat addAction ["Throw out light", {0 = [_this select 2] spawn {deleteVehicle lightpad; boat removeAction (_this select 0)}}]; // Scrapped boat part in Rev0985
 // == Sounds
 [] execVM "sound\scream-loop.sqf";
 [] execVM "sound\breath-loop.sqf";
