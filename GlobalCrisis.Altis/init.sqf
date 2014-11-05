@@ -14,3 +14,6 @@
 // == Global variables.
 honkEH = false;
 athsweep = false;
+
+// == Virtual Arsenal
+[] execVM "arsenalsetup.sqf";
