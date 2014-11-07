@@ -16,8 +16,8 @@ class CfgHints
 		{
 			displayName = "Welcoming Statement";
 			displayNameShort = "Welcome to ""Global Crisis""";
-			description = "Welcome, %11. Whilst you enjoy the boat and helicopter ride to the base, allow me to lay out what this mission is about. In this mission, you'll be seeing the introduction of ISI Agent Dariush Gilani.  There are laptops spread throughout the mission that will give you Intel about him and other important characters.";
-			tip = "The base at the AAC Airfield will allow you to restock your ammunition as well as acquire weapons.";
+			description = "Welcome, %11. Whilst you enjoy the helicopter ride to the base, allow me to lay out what this mission is about. In this mission, you'll be seeing the introduction of ISI Agent Dariush Gilani. This mission employs a fair amount of built-in features like the Virtual Arsenal, dialogs aswell as a variety of sound and visual effects.";
+			tip = "Creating custom content for this mission is quick and easy, if you are up for the task. Look into the Briefing for more info.";
 			arguments[] = {profileName};
 			image = "";
 			noImage = false;
@@ -77,7 +77,7 @@ class CfgHints
 			displayName = "Navigation: Mission Control";
 			displayNameShort = "Navigating Mission Control";
 			description = "You will have a fixed list of missions available in the list once you open Mission Control. The interface is simple and to the point. To accept a mission, hold Shift and press Enter. You will then receive tasks accordingly. To exit Mission Control, simply press ESC once.";
-			tip = "By completing tasks you will unlock more missions in the MC.";
+			tip = "Any dialog that is open can ble closed by pressing Escape (ESC)";
 			arguments[] = {};
 			image ="img\CIALogo.paa";
 			noImage = false;

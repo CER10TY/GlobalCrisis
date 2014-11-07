@@ -18,3 +18,6 @@ execTimes = 0;
 
 // == Virtual Arsenal
 [] execVM "arsenalsetup.sqf";
+
+// == Briefing
+[] execVM "briefing.sqf";
