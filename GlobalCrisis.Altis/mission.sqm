@@ -41,7 +41,9 @@ class Mission
 		"A3_Soft_F_MRAP_01",
 		"A3_Armor_F_Slammer",
 		"A3_Structures_F_Wrecks",
-		"A3_Modules_F_Effects"
+		"A3_Modules_F_Effects",
+		"A3_Soft_F_Truck",
+		"A3_Soft_F_Bootcamp_Offroad_01"
 	};
 	addOnsAuto[]=
 	{
@@ -58,6 +60,8 @@ class Mission
 		"A3_Soft_F_Gamma_Offroad",
 		"a3_soft_f_offroad_01",
 		"A3_Modules_F_Effects",
+		"A3_Soft_F_Truck",
+		"A3_Soft_F_Bootcamp_Offroad_01",
 		"A3_Structures_F_Heli_Ind_AirPort",
 		"A3_Signs_F",
 		"A3_Structures_F_Items_Electronics",
@@ -88,7 +92,7 @@ class Mission
 	randomSeed=7203439;
 	class Intel
 	{
-		briefingName="Global Crisis - v0.996DEV";
+		briefingName="Global Crisis - v0.999DEV";
 		overviewText="You are Dariush Gilani - An ISI Operative working with the CIA and DEVGRU.";
 		startWeather=0.29999998;
 		startWind=0.099999994;
@@ -107,7 +111,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=125;
+		items=177;
 		class Item0
 		{
 			side="WEST";
@@ -116,9 +120,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={12741.105,0.21804899,5615.2236};
+					position[]={12734.151,-0.11443679,5631.5786};
 					azimut=334.80399;
-					offsetY=1000;
 					special="NONE";
 					id=0;
 					side="WEST";
@@ -3228,6 +3231,3086 @@ class Mission
 				};
 			};
 		};
+		class Item125
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10895.795,128.04787,7971.5078};
+					class args
+					{
+						items=11;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="Timeout";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="FireDamage";
+						};
+						class Item5
+						{
+							value="10";
+							parentCls="ModuleEffectsFire_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="2";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1.25";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSpeed";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleOrientation";
+						};
+					};
+					id=136;
+					side="LOGIC";
+					vehicle="ModuleEffectsFire_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item126
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10896.688,128.16318,7971.1953};
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorAlpha";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Timeout";
+						};
+						class Item5
+						{
+							value="3";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="120";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="2";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Expansion";
+						};
+						class Item10
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSpeed";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifting";
+						};
+						class Item12
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="WindEffect";
+						};
+					};
+					id=137;
+					side="LOGIC";
+					vehicle="ModuleEffectsSmoke_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item127
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10907.609,129.65396,7961.2939};
+					azimut=66.658524;
+					class args
+					{
+						items=11;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="Timeout";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="FireDamage";
+						};
+						class Item5
+						{
+							value="10";
+							parentCls="ModuleEffectsFire_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="2";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1.25";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSpeed";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleOrientation";
+						};
+					};
+					id=138;
+					side="LOGIC";
+					vehicle="ModuleEffectsFire_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item128
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10907.686,129.67982,7960.3467};
+					azimut=66.658524;
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorAlpha";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Timeout";
+						};
+						class Item5
+						{
+							value="3";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="120";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="2";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Expansion";
+						};
+						class Item10
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSpeed";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifting";
+						};
+						class Item12
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="WindEffect";
+						};
+					};
+					id=139;
+					side="LOGIC";
+					vehicle="ModuleEffectsSmoke_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item129
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11202.901,177.0713,8759.5645};
+					class args
+					{
+						items=11;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="Timeout";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="FireDamage";
+						};
+						class Item5
+						{
+							value="10";
+							parentCls="ModuleEffectsFire_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="2";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1.25";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSpeed";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleOrientation";
+						};
+					};
+					id=140;
+					side="LOGIC";
+					vehicle="ModuleEffectsFire_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item130
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11203.794,177.08731,8759.252};
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorAlpha";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Timeout";
+						};
+						class Item5
+						{
+							value="3";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="120";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="2";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Expansion";
+						};
+						class Item10
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSpeed";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifting";
+						};
+						class Item12
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="WindEffect";
+						};
+					};
+					id=141;
+					side="LOGIC";
+					vehicle="ModuleEffectsSmoke_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item131
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11214.716,179.02902,8749.3506};
+					azimut=66.658524;
+					class args
+					{
+						items=11;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="Timeout";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="FireDamage";
+						};
+						class Item5
+						{
+							value="10";
+							parentCls="ModuleEffectsFire_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="2";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1.25";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSpeed";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleOrientation";
+						};
+					};
+					id=142;
+					side="LOGIC";
+					vehicle="ModuleEffectsFire_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item132
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11214.792,179.29991,8748.4033};
+					azimut=66.658524;
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorAlpha";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Timeout";
+						};
+						class Item5
+						{
+							value="3";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="120";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="2";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Expansion";
+						};
+						class Item10
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSpeed";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifting";
+						};
+						class Item12
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="WindEffect";
+						};
+					};
+					id=143;
+					side="LOGIC";
+					vehicle="ModuleEffectsSmoke_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item133
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11163.5,179.01855,8715.3613};
+					azimut=92.43428;
+					class args
+					{
+						items=11;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="Timeout";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="FireDamage";
+						};
+						class Item5
+						{
+							value="10";
+							parentCls="ModuleEffectsFire_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="2";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1.25";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSpeed";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleOrientation";
+						};
+					};
+					id=144;
+					side="LOGIC";
+					vehicle="ModuleEffectsFire_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item134
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11163.154,179.02,8714.4766};
+					azimut=92.43428;
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorAlpha";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Timeout";
+						};
+						class Item5
+						{
+							value="3";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="120";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="2";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Expansion";
+						};
+						class Item10
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSpeed";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifting";
+						};
+						class Item12
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="WindEffect";
+						};
+					};
+					id=145;
+					side="LOGIC";
+					vehicle="ModuleEffectsSmoke_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item135
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11152.793,179.02,8703.9873};
+					azimut=159.09291;
+					class args
+					{
+						items=11;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="Timeout";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="FireDamage";
+						};
+						class Item5
+						{
+							value="10";
+							parentCls="ModuleEffectsFire_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="2";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1.25";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSpeed";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleOrientation";
+						};
+					};
+					id=146;
+					side="LOGIC";
+					vehicle="ModuleEffectsFire_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item136
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={11151.843,179.02,8703.9551};
+					azimut=159.09291;
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorAlpha";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Timeout";
+						};
+						class Item5
+						{
+							value="3";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="120";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="2";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Expansion";
+						};
+						class Item10
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSpeed";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifting";
+						};
+						class Item12
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="WindEffect";
+						};
+					};
+					id=147;
+					side="LOGIC";
+					vehicle="ModuleEffectsSmoke_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item137
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={9007.7715,56.583992,8567.3809};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="0";
+							parentCls="ModuleTracers_F";
+							typeName="Side";
+						};
+						class Item1
+						{
+							value="5";
+							parentCls="ModuleTracers_F";
+							typeName="Min";
+						};
+						class Item2
+						{
+							value="10";
+							parentCls="ModuleTracers_F";
+							typeName="Max";
+						};
+					};
+					id=148;
+					side="LOGIC";
+					vehicle="ModuleTracers_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item138
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={8918.0889,37.062775,8460.6543};
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="0";
+							parentCls="ModuleTracers_F";
+							typeName="Side";
+						};
+						class Item1
+						{
+							value="5";
+							parentCls="ModuleTracers_F";
+							typeName="Min";
+						};
+						class Item2
+						{
+							value="10";
+							parentCls="ModuleTracers_F";
+							typeName="Max";
+						};
+					};
+					id=149;
+					side="LOGIC";
+					vehicle="ModuleTracers_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item139
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={16808.123,79.880798,10933.344};
+					azimut=143.35944;
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="0";
+							parentCls="ModuleTracers_F";
+							typeName="Side";
+						};
+						class Item1
+						{
+							value="5";
+							parentCls="ModuleTracers_F";
+							typeName="Min";
+						};
+						class Item2
+						{
+							value="10";
+							parentCls="ModuleTracers_F";
+							typeName="Max";
+						};
+					};
+					id=150;
+					side="LOGIC";
+					vehicle="ModuleTracers_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item140
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={16816.379,84.075294,11072.511};
+					azimut=143.35944;
+					class args
+					{
+						items=3;
+						class Item0
+						{
+							value="0";
+							parentCls="ModuleTracers_F";
+							typeName="Side";
+						};
+						class Item1
+						{
+							value="5";
+							parentCls="ModuleTracers_F";
+							typeName="Min";
+						};
+						class Item2
+						{
+							value="10";
+							parentCls="ModuleTracers_F";
+							typeName="Max";
+						};
+					};
+					id=151;
+					side="LOGIC";
+					vehicle="ModuleTracers_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item141
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={16787.129,80.18119,9556};
+					class args
+					{
+						items=11;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="Timeout";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="FireDamage";
+						};
+						class Item5
+						{
+							value="10";
+							parentCls="ModuleEffectsFire_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="2";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1.25";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSpeed";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleOrientation";
+						};
+					};
+					id=152;
+					side="LOGIC";
+					vehicle="ModuleEffectsFire_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item142
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={16788.021,80.122841,9555.6875};
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorAlpha";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Timeout";
+						};
+						class Item5
+						{
+							value="3";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="120";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="2";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Expansion";
+						};
+						class Item10
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSpeed";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifting";
+						};
+						class Item12
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="WindEffect";
+						};
+					};
+					id=153;
+					side="LOGIC";
+					vehicle="ModuleEffectsSmoke_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item143
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={16875.785,51.293015,9339.6816};
+					azimut=66.658524;
+					class args
+					{
+						items=11;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="Timeout";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="FireDamage";
+						};
+						class Item5
+						{
+							value="10";
+							parentCls="ModuleEffectsFire_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="2";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1.25";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSpeed";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleOrientation";
+						};
+					};
+					id=154;
+					side="LOGIC";
+					vehicle="ModuleEffectsFire_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item144
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={16875.861,51.232185,9338.7344};
+					azimut=66.658524;
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorAlpha";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Timeout";
+						};
+						class Item5
+						{
+							value="3";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="120";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="2";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Expansion";
+						};
+						class Item10
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSpeed";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifting";
+						};
+						class Item12
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="WindEffect";
+						};
+					};
+					id=155;
+					side="LOGIC";
+					vehicle="ModuleEffectsSmoke_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item145
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={16672.051,42.398186,9332.5527};
+					azimut=117.02457;
+					class args
+					{
+						items=11;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="Timeout";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="FireDamage";
+						};
+						class Item5
+						{
+							value="10";
+							parentCls="ModuleEffectsFire_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="2";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1.25";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSpeed";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleOrientation";
+						};
+					};
+					id=156;
+					side="LOGIC";
+					vehicle="ModuleEffectsFire_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item146
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={16671.371,42.33532,9331.8936};
+					azimut=117.02457;
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorAlpha";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Timeout";
+						};
+						class Item5
+						{
+							value="3";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="120";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="2";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Expansion";
+						};
+						class Item10
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSpeed";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifting";
+						};
+						class Item12
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="WindEffect";
+						};
+					};
+					id=157;
+					side="LOGIC";
+					vehicle="ModuleEffectsSmoke_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item147
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={16554.254,15.554018,9312.5283};
+					azimut=183.68323;
+					class args
+					{
+						items=11;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="Timeout";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="FireDamage";
+						};
+						class Item5
+						{
+							value="10";
+							parentCls="ModuleEffectsFire_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="2";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1.25";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSpeed";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleOrientation";
+						};
+					};
+					id=158;
+					side="LOGIC";
+					vehicle="ModuleEffectsFire_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item148
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={16553.377,15.513101,9312.8945};
+					azimut=183.68323;
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorAlpha";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Timeout";
+						};
+						class Item5
+						{
+							value="3";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="120";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="2";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Expansion";
+						};
+						class Item10
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSpeed";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifting";
+						};
+						class Item12
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="WindEffect";
+						};
+					};
+					id=159;
+					side="LOGIC";
+					vehicle="ModuleEffectsSmoke_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item149
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12308.417,123.97489,8886.1035};
+					class args
+					{
+						items=11;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="Timeout";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="FireDamage";
+						};
+						class Item5
+						{
+							value="10";
+							parentCls="ModuleEffectsFire_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="2";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1.25";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSpeed";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleOrientation";
+						};
+					};
+					id=160;
+					side="LOGIC";
+					vehicle="ModuleEffectsFire_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item150
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12309.31,123.97952,8885.791};
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorAlpha";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Timeout";
+						};
+						class Item5
+						{
+							value="3";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="120";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="2";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Expansion";
+						};
+						class Item10
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSpeed";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifting";
+						};
+						class Item12
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="WindEffect";
+						};
+					};
+					id=161;
+					side="LOGIC";
+					vehicle="ModuleEffectsSmoke_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item151
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12307.925,123.78859,8865.4092};
+					azimut=66.658524;
+					class args
+					{
+						items=11;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="Timeout";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="FireDamage";
+						};
+						class Item5
+						{
+							value="10";
+							parentCls="ModuleEffectsFire_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="2";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1.25";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSpeed";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleOrientation";
+						};
+					};
+					id=162;
+					side="LOGIC";
+					vehicle="ModuleEffectsFire_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item152
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12308.001,123.76685,8864.4619};
+					azimut=66.658524;
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorAlpha";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Timeout";
+						};
+						class Item5
+						{
+							value="3";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="120";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="2";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Expansion";
+						};
+						class Item10
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSpeed";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifting";
+						};
+						class Item12
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="WindEffect";
+						};
+					};
+					id=163;
+					side="LOGIC";
+					vehicle="ModuleEffectsSmoke_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item153
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12296.351,123.98676,8903.7412};
+					azimut=334.80399;
+					special="NONE";
+					id=164;
+					side="CIV";
+					vehicle="C_Van_01_box_F";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					init="this disableAI ""move""; this allowDamage false";
+				};
+			};
+		};
+		class Item154
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12268.469,123.59039,8888.9365};
+					azimut=352.33401;
+					special="NONE";
+					id=165;
+					side="CIV";
+					vehicle="C_Van_01_box_F";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					init="this disableAI ""move""; this allowDamage false";
+				};
+			};
+		};
+		class Item155
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12294.974,123.99014,8893.3848};
+					azimut=233.853;
+					special="NONE";
+					id=166;
+					side="CIV";
+					vehicle="C_Offroad_01_repair_F";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					init="this disableAI ""move""; this allowDamage false";
+				};
+			};
+		};
+		class Item156
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12275.062,123.76479,8882.5146};
+					azimut=450.32001;
+					special="NONE";
+					id=167;
+					side="CIV";
+					vehicle="C_man_1";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					init="this disableAI ""move""; this allowDamage false";
+				};
+			};
+		};
+		class Item157
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12280.802,123.87843,8878.79};
+					azimut=450.32001;
+					special="NONE";
+					id=168;
+					side="CIV";
+					vehicle="C_man_1";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					init="this disableAI ""move""; this allowDamage false";
+				};
+			};
+		};
+		class Item158
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12298.613,124.01713,8905.2119};
+					azimut=676.23602;
+					special="NONE";
+					id=169;
+					side="CIV";
+					vehicle="C_man_1";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					init="this disableAI ""move""; this allowDamage false";
+				};
+			};
+		};
+		class Item159
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12299.064,123.9496,8874.4756};
+					azimut=327.05701;
+					special="NONE";
+					id=170;
+					side="CIV";
+					vehicle="C_man_1";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					init="this disableAI ""move""";
+				};
+			};
+		};
+		class Item160
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12297.733,123.94745,8872.8506};
+					azimut=327.05701;
+					special="NONE";
+					id=171;
+					side="CIV";
+					vehicle="C_man_1";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					init="this disableAI ""move""";
+				};
+			};
+		};
+		class Item161
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12297.289,123.94093,8875.4609};
+					azimut=157.688;
+					special="NONE";
+					id=172;
+					side="CIV";
+					vehicle="C_man_1";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					init="this disableAI ""move""";
+				};
+			};
+		};
+		class Item162
+		{
+			side="CIV";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12295.269,123.93358,8873.3906};
+					azimut=457.48901;
+					special="NONE";
+					id=173;
+					side="CIV";
+					vehicle="C_man_1";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					init="this disableAI ""move""";
+				};
+			};
+		};
+		class Item163
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12290.577,123.98438,8867.5625};
+					azimut=-123.95399;
+					class args
+					{
+						items=11;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="Timeout";
+						};
+						class Item4
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="FireDamage";
+						};
+						class Item5
+						{
+							value="10";
+							parentCls="ModuleEffectsFire_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="2";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1.25";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="1";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleSpeed";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="ModuleEffectsFire_F";
+							typeName="ParticleOrientation";
+						};
+					};
+					id=174;
+					side="LOGIC";
+					vehicle="ModuleEffectsFire_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item164
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12290.333,123.97401,8868.4805};
+					azimut=-123.95399;
+					class args
+					{
+						items=13;
+						class Item0
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorRed";
+						};
+						class Item1
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorGreen";
+						};
+						class Item2
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorBlue";
+						};
+						class Item3
+						{
+							value="0.5";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ColorAlpha";
+						};
+						class Item4
+						{
+							value="0";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Timeout";
+						};
+						class Item5
+						{
+							value="3";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="EffectSize";
+						};
+						class Item6
+						{
+							value="50";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleDensity";
+						};
+						class Item7
+						{
+							value="120";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifeTime";
+						};
+						class Item8
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSize";
+						};
+						class Item9
+						{
+							value="2";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="Expansion";
+						};
+						class Item10
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleSpeed";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="ParticleLifting";
+						};
+						class Item12
+						{
+							value="1";
+							parentCls="ModuleEffectsSmoke_F";
+							typeName="WindEffect";
+						};
+					};
+					id=175;
+					side="LOGIC";
+					vehicle="ModuleEffectsSmoke_F";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item165
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12287.198,123.92636,8868.877};
+					special="NONE";
+					id=176;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					init="([0,0,0] nearestobject 758575) setDamage 1";
+				};
+			};
+		};
+		class Item166
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12284.466,123.75774,8899.501};
+					azimut=870.47845;
+					special="NONE";
+					id=177;
+					side="WEST";
+					vehicle="B_G_Soldier_GL_F";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					init="this allowDamage false; this disableAI ""move""";
+				};
+			};
+		};
+		class Item167
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12281.273,123.7079,8897.8818};
+					azimut=870.47845;
+					special="NONE";
+					id=178;
+					side="WEST";
+					vehicle="B_G_Soldier_GL_F";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					init="this allowDamage false; this disableAI ""move""";
+				};
+			};
+		};
+		class Item168
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12287.354,123.86452,8895.8271};
+					azimut=870.47845;
+					special="NONE";
+					id=179;
+					side="WEST";
+					vehicle="B_G_Soldier_GL_F";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					init="this allowDamage false; this disableAI ""move""";
+				};
+			};
+		};
+		class Item169
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12269.686,123.70021,8893.6445};
+					azimut=870.47845;
+					special="NONE";
+					id=180;
+					side="WEST";
+					vehicle="B_G_Soldier_GL_F";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					init="this allowDamage false; this disableAI ""move""";
+				};
+			};
+		};
+		class Item170
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12279.482,123.85909,8879.6523};
+					azimut=775.87;
+					special="NONE";
+					id=181;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					init="this allowDamage false; this disableAI ""move""";
+				};
+			};
+		};
+		class Item171
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12276.595,123.80561,8881.0068};
+					azimut=774.17676;
+					special="NONE";
+					id=182;
+					side="WEST";
+					vehicle="B_G_Soldier_GL_F";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					init="this allowDamage false; this disableAI ""move""";
+				};
+			};
+		};
+		class Item172
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12276.944,123.79989,8886.2988};
+					azimut=832.82733;
+					special="NONE";
+					id=183;
+					side="WEST";
+					vehicle="B_G_Soldier_F";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					init="this allowDamage false; this disableAI ""move""";
+				};
+			};
+		};
+		class Item173
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12306.828,124.12448,8915.2959};
+					azimut=775.87;
+					special="NONE";
+					id=184;
+					side="WEST";
+					vehicle="B_G_Offroad_01_armed_F";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					init="this allowDamage false;";
+				};
+			};
+		};
+		class Item174
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12298.275,123.71061,8930.9873};
+					azimut=803.46545;
+					special="NONE";
+					id=185;
+					side="WEST";
+					vehicle="B_G_Offroad_01_armed_F";
+					leader=1;
+					rank="CAPTAIN";
+					skill=0.60000002;
+					init="this allowDamage false;";
+				};
+			};
+		};
+		class Item175
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12308.261,123.97406,8884.5469};
+					special="NONE";
+					id=186;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					init="([0,0,0] nearestobject 758537) setDamage 1";
+				};
+			};
+		};
+		class Item176
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={12304.808,123.85751,8867.6338};
+					special="NONE";
+					id=187;
+					side="LOGIC";
+					vehicle="Logic";
+					leader=1;
+					skill=0.60000002;
+					init="([0,0,0] nearestobject 758574) setDamage 1";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -3236,7 +6319,7 @@ class Mission
 		{
 			position[]={12730.42,0.076788858,5640.2251};
 			offsetY=-0.5;
-			id=136;
+			id=188;
 			side="EMPTY";
 			vehicle="Land_MobileLandingPlatform_01_F";
 			leader=1;
@@ -3249,7 +6332,7 @@ class Mission
 			position[]={11578.453,23.704071,11942.996};
 			azimut=-60.8297;
 			special="NONE";
-			id=137;
+			id=189;
 			side="EMPTY";
 			vehicle="Land_Sign_WarningMilitaryArea_F";
 			leader=1;
@@ -3260,7 +6343,7 @@ class Mission
 			position[]={11551.482,23.678022,11989.615};
 			azimut=75.938522;
 			special="NONE";
-			id=138;
+			id=190;
 			side="EMPTY";
 			vehicle="Land_FloodLight_F";
 			leader=1;
@@ -3272,7 +6355,7 @@ class Mission
 			position[]={11537.93,23.747335,11967.422};
 			azimut=-362.64737;
 			special="NONE";
-			id=139;
+			id=191;
 			side="EMPTY";
 			vehicle="Land_FloodLight_F";
 			leader=1;
@@ -3283,7 +6366,7 @@ class Mission
 		{
 			position[]={11573.684,23.637629,11978.093};
 			azimut=31.357651;
-			id=140;
+			id=192;
 			side="EMPTY";
 			vehicle="MapBoard_altis_F";
 			skill=0.60000002;
@@ -3292,7 +6375,7 @@ class Mission
 		{
 			position[]={11595.593,23.637318,11959.458};
 			azimut=-60.118404;
-			id=141;
+			id=193;
 			side="EMPTY";
 			vehicle="Land_PartyTent_01_F";
 			skill=0.60000002;
@@ -3301,7 +6384,7 @@ class Mission
 		{
 			position[]={11572.807,23.643633,11974.158};
 			azimut=211.18401;
-			id=142;
+			id=194;
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
@@ -3311,7 +6394,7 @@ class Mission
 		{
 			position[]={11574.824,23.638878,11973.69};
 			azimut=165.851;
-			id=143;
+			id=195;
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
@@ -3321,7 +6404,7 @@ class Mission
 		{
 			position[]={11569.2,23.649841,11976.717};
 			azimut=241.759;
-			id=144;
+			id=196;
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
@@ -3331,7 +6414,7 @@ class Mission
 		{
 			position[]={11568.114,23.655272,11974.816};
 			azimut=246.87399;
-			id=145;
+			id=197;
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
@@ -3341,7 +6424,7 @@ class Mission
 		{
 			position[]={11570.29,23.64414,11978.813};
 			azimut=30.002701;
-			id=146;
+			id=198;
 			side="EMPTY";
 			vehicle="Land_CampingTable_F";
 			skill=0.60000002;
@@ -3351,7 +6434,7 @@ class Mission
 		{
 			position[]={11598.566,23.627832,11961.529};
 			azimut=43.163601;
-			id=147;
+			id=199;
 			side="EMPTY";
 			vehicle="Land_Sleeping_bag_blue_folded_F";
 			skill=0.60000002;
@@ -3360,7 +6443,7 @@ class Mission
 		{
 			position[]={11600.508,23.624924,11961.648};
 			azimut=43.163601;
-			id=148;
+			id=200;
 			side="EMPTY";
 			vehicle="Land_Sleeping_bag_blue_folded_F";
 			skill=0.60000002;
@@ -3369,7 +6452,7 @@ class Mission
 		{
 			position[]={11598.451,23.630568,11960.562};
 			azimut=43.163601;
-			id=149;
+			id=201;
 			side="EMPTY";
 			vehicle="Land_Sleeping_bag_blue_folded_F";
 			skill=0.60000002;
@@ -3378,7 +6461,7 @@ class Mission
 		{
 			position[]={11599.77,23.629116,11960.446};
 			azimut=43.163601;
-			id=150;
+			id=202;
 			side="EMPTY";
 			vehicle="Land_Sleeping_bag_blue_folded_F";
 			skill=0.60000002;
@@ -3387,7 +6470,7 @@ class Mission
 		{
 			position[]={11599.655,23.623377,11962.812};
 			azimut=43.163601;
-			id=151;
+			id=203;
 			side="EMPTY";
 			vehicle="Land_Sleeping_bag_blue_folded_F";
 			skill=0.60000002;
@@ -3396,7 +6479,7 @@ class Mission
 		{
 			position[]={11594.848,23.633089,11961.416};
 			azimut=30.965799;
-			id=152;
+			id=204;
 			side="EMPTY";
 			vehicle="Land_Sleeping_bag_blue_F";
 			skill=0.60000002;
@@ -3405,7 +6488,7 @@ class Mission
 		{
 			position[]={11594.188,23.628237,11963.821};
 			azimut=30.965761;
-			id=153;
+			id=205;
 			side="EMPTY";
 			vehicle="Land_Sleeping_bag_blue_F";
 			skill=0.60000002;
@@ -3414,7 +6497,7 @@ class Mission
 		{
 			position[]={11596.089,23.626783,11963.823};
 			azimut=30.965761;
-			id=154;
+			id=206;
 			side="EMPTY";
 			vehicle="Land_Sleeping_bag_blue_F";
 			skill=0.60000002;
@@ -3423,7 +6506,7 @@ class Mission
 		{
 			position[]={11597.333,23.626154,11963.051};
 			azimut=43.163601;
-			id=155;
+			id=207;
 			side="EMPTY";
 			vehicle="Land_Camping_Light_F";
 			skill=0.60000002;
@@ -3432,7 +6515,7 @@ class Mission
 		{
 			position[]={11590.384,23.648115,11958.014};
 			azimut=63.720074;
-			id=156;
+			id=208;
 			side="EMPTY";
 			vehicle="Land_CampingTable_F";
 			skill=0.60000002;
@@ -3442,7 +6525,7 @@ class Mission
 		{
 			position[]={11566.156,23.652788,11980.594};
 			azimut=545.03748;
-			id=157;
+			id=209;
 			side="EMPTY";
 			vehicle="Land_CampingTable_F";
 			skill=0.60000002;
@@ -3452,7 +6535,7 @@ class Mission
 		{
 			position[]={11596.751,23.649227,11954.706};
 			azimut=-23.099001;
-			id=158;
+			id=210;
 			side="EMPTY";
 			vehicle="Land_CampingTable_F";
 			skill=0.60000002;
@@ -3462,7 +6545,7 @@ class Mission
 		{
 			position[]={11586.203,23.626907,11968.058};
 			azimut=120;
-			id=159;
+			id=211;
 			side="EMPTY";
 			vehicle="Land_FieldToilet_F";
 			skill=0.60000002;
@@ -3471,7 +6554,7 @@ class Mission
 		{
 			position[]={11584.069,23.626652,11969.221};
 			azimut=120;
-			id=160;
+			id=212;
 			side="EMPTY";
 			vehicle="Land_FieldToilet_F";
 			skill=0.60000002;
@@ -3480,7 +6563,7 @@ class Mission
 		{
 			position[]={11582.013,23.627316,11970.424};
 			azimut=120;
-			id=161;
+			id=213;
 			side="EMPTY";
 			vehicle="Land_FieldToilet_F";
 			skill=0.60000002;
@@ -3489,7 +6572,7 @@ class Mission
 		{
 			position[]={11570.5,23.648355,11975.231};
 			azimut=214.709;
-			id=162;
+			id=214;
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
@@ -3499,7 +6582,7 @@ class Mission
 		{
 			position[]={11570.687,23.651196,11972.727};
 			azimut=214.1705;
-			id=163;
+			id=215;
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
@@ -3509,7 +6592,7 @@ class Mission
 		{
 			position[]={11575.156,23.640331,11971.936};
 			azimut=169.758;
-			id=164;
+			id=216;
 			side="EMPTY";
 			vehicle="Land_CampingChair_V2_F";
 			skill=0.60000002;
@@ -3520,7 +6603,7 @@ class Mission
 			position[]={11568.707,23.647036,11979.807};
 			azimut=30.4806;
 			offsetY=1;
-			id=165;
+			id=217;
 			side="EMPTY";
 			vehicle="RH_m4m16ammobox";
 			skill=0.60000002;
@@ -3531,7 +6614,7 @@ class Mission
 			position[]={11569.487,23.644541,11980.117};
 			azimut=122.917;
 			offsetY=1;
-			id=166;
+			id=218;
 			side="EMPTY";
 			vehicle="HLC_AK_ammobox";
 			skill=0.60000002;
@@ -3542,7 +6625,7 @@ class Mission
 			position[]={11568.325,23.646254,11981.157};
 			azimut=121.21368;
 			offsetY=1;
-			id=167;
+			id=219;
 			side="EMPTY";
 			vehicle="Box_NATO_Grenades_F";
 			skill=0.60000002;
@@ -3552,7 +6635,7 @@ class Mission
 			position[]={11557.033,23.670622,11983.436};
 			azimut=172.576;
 			offsetY=1;
-			id=168;
+			id=220;
 			side="EMPTY";
 			vehicle="C_SUV_01_F";
 			skill=0.60000002;
@@ -3563,7 +6646,7 @@ class Mission
 			position[]={11554.007,23.674658,11984.562};
 			azimut=172.57643;
 			offsetY=1;
-			id=169;
+			id=221;
 			side="EMPTY";
 			vehicle="C_SUV_01_F";
 			skill=0.60000002;
@@ -3573,7 +6656,7 @@ class Mission
 			position[]={11551.098,23.678535,11985.336};
 			azimut=172.57643;
 			offsetY=1;
-			id=170;
+			id=222;
 			side="EMPTY";
 			vehicle="C_SUV_01_F";
 			skill=0.60000002;
@@ -3584,7 +6667,7 @@ class Mission
 			azimut=122.709;
 			offsetY=1;
 			special="NONE";
-			id=171;
+			id=223;
 			side="EMPTY";
 			vehicle="Land_JetEngineStarter_01_F";
 			leader=1;
@@ -3596,7 +6679,7 @@ class Mission
 			azimut=212.65199;
 			offsetY=1;
 			special="NONE";
-			id=172;
+			id=224;
 			side="EMPTY";
 			vehicle="Land_MobileLandingPlatform_01_F";
 			leader=1;
@@ -3607,7 +6690,7 @@ class Mission
 			position[]={12732.765,0.12542948,5641.5288};
 			offsetY=0.5;
 			special="NONE";
-			id=173;
+			id=225;
 			side="EMPTY";
 			vehicle="PortableHelipadLight_01_blue_F";
 			leader=1;
@@ -3618,7 +6701,7 @@ class Mission
 			position[]={12732.803,0.077978939,5639.0444};
 			offsetY=0.5;
 			special="NONE";
-			id=174;
+			id=226;
 			side="EMPTY";
 			vehicle="PortableHelipadLight_01_blue_F";
 			leader=1;
@@ -3629,7 +6712,7 @@ class Mission
 			position[]={11545.982,23.705061,11966.738};
 			offsetY=1;
 			special="NONE";
-			id=175;
+			id=227;
 			side="EMPTY";
 			vehicle="Land_RotorCoversBag_01_F";
 			leader=1;
@@ -3640,7 +6723,7 @@ class Mission
 			position[]={11545.168,23.716805,11963.444};
 			offsetY=1;
 			special="NONE";
-			id=176;
+			id=228;
 			side="EMPTY";
 			vehicle="Land_RotorCoversBag_01_F";
 			leader=1;
@@ -3652,7 +6735,7 @@ class Mission
 			azimut=60.245865;
 			offsetY=1;
 			special="NONE";
-			id=177;
+			id=229;
 			side="EMPTY";
 			vehicle="B_UAV_02_CAS_F";
 			isUAV=1;
@@ -3665,7 +6748,7 @@ class Mission
 			azimut=60.245899;
 			offsetY=1;
 			special="NONE";
-			id=178;
+			id=230;
 			side="EMPTY";
 			vehicle="B_UAV_02_F";
 			isUAV=1;
@@ -3677,7 +6760,7 @@ class Mission
 			position[]={11562.393,23.693178,11955.222};
 			offsetY=1;
 			special="NONE";
-			id=179;
+			id=231;
 			side="EMPTY";
 			vehicle="Land_CampingTable_F";
 			leader=1;
@@ -3689,7 +6772,7 @@ class Mission
 			position[]={11564.061,23.69418,11953.901};
 			offsetY=1;
 			special="NONE";
-			id=180;
+			id=232;
 			side="EMPTY";
 			vehicle="Land_CampingTable_F";
 			leader=1;
@@ -3701,7 +6784,7 @@ class Mission
 			position[]={11565.457,23.695627,11952.66};
 			offsetY=1;
 			special="NONE";
-			id=181;
+			id=233;
 			side="EMPTY";
 			vehicle="Land_CampingTable_F";
 			leader=1;
@@ -3713,7 +6796,7 @@ class Mission
 			position[]={11567.202,23.696608,11951.42};
 			offsetY=1;
 			special="NONE";
-			id=182;
+			id=234;
 			side="EMPTY";
 			vehicle="Land_CampingTable_F";
 			leader=1;
@@ -3725,7 +6808,7 @@ class Mission
 			position[]={11562.859,23.923849,11956.73};
 			offsetY=1;
 			special="NONE";
-			id=183;
+			id=235;
 			side="EMPTY";
 			vehicle="B_UAV_01_F";
 			isUAV=1;
@@ -3738,7 +6821,7 @@ class Mission
 			position[]={11565.651,23.688116,11955.761};
 			offsetY=1;
 			special="NONE";
-			id=184;
+			id=236;
 			side="EMPTY";
 			vehicle="B_UAV_01_F";
 			isUAV=1;
@@ -3751,7 +6834,7 @@ class Mission
 			position[]={11566.854,23.690464,11953.898};
 			offsetY=1;
 			special="NONE";
-			id=185;
+			id=237;
 			side="EMPTY";
 			vehicle="B_UAV_01_F";
 			isUAV=1;
@@ -3764,7 +6847,7 @@ class Mission
 			position[]={11569.414,23.691393,11952.271};
 			offsetY=1;
 			special="NONE";
-			id=186;
+			id=238;
 			side="EMPTY";
 			vehicle="B_UAV_01_F";
 			isUAV=1;
@@ -3777,7 +6860,7 @@ class Mission
 			position[]={11574.827,23.700878,11946.006};
 			azimut=-475.797;
 			special="NONE";
-			id=187;
+			id=239;
 			side="EMPTY";
 			vehicle="Land_FloodLight_F";
 			leader=1;
@@ -3789,7 +6872,7 @@ class Mission
 			position[]={11592.493,23.620579,11969.566};
 			azimut=210;
 			special="NONE";
-			id=188;
+			id=240;
 			side="EMPTY";
 			vehicle="Land_Sign_WarningMilitaryArea_F";
 			leader=1;
@@ -3800,7 +6883,7 @@ class Mission
 			position[]={11652.825,22.862265,12007.148};
 			azimut=325.20309;
 			special="NONE";
-			id=189;
+			id=241;
 			side="EMPTY";
 			vehicle="FlagPole_F";
 			leader=1;
@@ -3811,7 +6894,7 @@ class Mission
 			position[]={11648.063,22.853243,12016.168};
 			azimut=229.938;
 			special="NONE";
-			id=190;
+			id=242;
 			side="EMPTY";
 			vehicle="Land_BarGate_F";
 			leader=1;
@@ -3823,7 +6906,7 @@ class Mission
 			position[]={11642.999,22.900578,12020.519};
 			azimut=219.3185;
 			special="NONE";
-			id=191;
+			id=243;
 			side="EMPTY";
 			vehicle="Land_Razorwire_F";
 			leader=1;
@@ -3834,7 +6917,7 @@ class Mission
 			position[]={11575.403,23.636127,11976.417};
 			azimut=390.45401;
 			offsetY=1;
-			id=192;
+			id=244;
 			side="EMPTY";
 			vehicle="Land_CampingTable_small_F";
 			leader=1;
@@ -3846,7 +6929,7 @@ class Mission
 			position[]={11592.381,23.628727,11964.285};
 			azimut=698.31598;
 			special="NONE";
-			id=193;
+			id=245;
 			side="EMPTY";
 			vehicle="Box_NATO_Wps_F";
 			leader=1;
@@ -3860,7 +6943,7 @@ class Mission
 			position[]={11593.921,23.63306,11961.891};
 			azimut=699.633;
 			special="NONE";
-			id=194;
+			id=246;
 			side="EMPTY";
 			vehicle="Item_FirstAidKit";
 			leader=1;
@@ -3871,7 +6954,7 @@ class Mission
 			position[]={11596.442,23.629185,11962.084};
 			azimut=699.633;
 			special="NONE";
-			id=195;
+			id=247;
 			side="EMPTY";
 			vehicle="Item_FirstAidKit";
 			leader=1;
@@ -3882,7 +6965,7 @@ class Mission
 			position[]={11598.848,23.675173,11949.317};
 			azimut=756.19659;
 			special="NONE";
-			id=196;
+			id=248;
 			side="EMPTY";
 			vehicle="Item_FirstAidKit";
 			leader=1;
@@ -3894,7 +6977,7 @@ class Mission
 			position[]={11599.701,23.668009,11950.447};
 			azimut=752.96008;
 			special="NONE";
-			id=197;
+			id=249;
 			side="EMPTY";
 			vehicle="Item_FirstAidKit";
 			leader=1;
@@ -3905,7 +6988,7 @@ class Mission
 		{
 			position[]={11601.609,23.650126,11953.323};
 			azimut=31.1635;
-			id=198;
+			id=250;
 			side="EMPTY";
 			vehicle="Land_Defibrillator_F";
 			skill=0.60000002;
@@ -3915,7 +6998,7 @@ class Mission
 		{
 			position[]={11600.289,23.663059,11951.229};
 			azimut=31.1635;
-			id=199;
+			id=251;
 			side="EMPTY";
 			vehicle="Land_Bandage_F";
 			skill=0.60000002;
@@ -3925,7 +7008,7 @@ class Mission
 		{
 			position[]={11602.345,23.658878,11951.498};
 			azimut=31.1635;
-			id=200;
+			id=252;
 			side="EMPTY";
 			vehicle="Land_Bandage_F";
 			skill=0.60000002;
@@ -3935,7 +7018,7 @@ class Mission
 		{
 			position[]={11600.987,23.656137,11952.352};
 			azimut=31.1635;
-			id=201;
+			id=253;
 			side="EMPTY";
 			vehicle="Land_Bandage_F";
 			skill=0.60000002;
@@ -3945,7 +7028,7 @@ class Mission
 		{
 			position[]={11603.627,23.66193,11950.605};
 			azimut=31.1635;
-			id=202;
+			id=254;
 			side="EMPTY";
 			vehicle="Land_Bandage_F";
 			skill=0.60000002;
@@ -3955,7 +7038,7 @@ class Mission
 		{
 			position[]={11601.608,23.666271,11950.296};
 			azimut=31.1635;
-			id=203;
+			id=255;
 			side="EMPTY";
 			vehicle="Land_Bandage_F";
 			skill=0.60000002;
@@ -3965,7 +7048,7 @@ class Mission
 		{
 			position[]={11603.084,23.66947,11949.328};
 			azimut=31.1635;
-			id=204;
+			id=256;
 			side="EMPTY";
 			vehicle="Land_Bandage_F";
 			skill=0.60000002;
@@ -3976,7 +7059,7 @@ class Mission
 			position[]={11601.059,23.672604,11949.246};
 			azimut=752.96002;
 			special="NONE";
-			id=205;
+			id=257;
 			side="EMPTY";
 			vehicle="Item_FirstAidKit";
 			leader=1;
@@ -3988,7 +7071,7 @@ class Mission
 			position[]={11600.282,23.67967,11948.115};
 			azimut=756.19702;
 			special="NONE";
-			id=206;
+			id=258;
 			side="EMPTY";
 			vehicle="Item_FirstAidKit";
 			leader=1;
@@ -4000,7 +7083,7 @@ class Mission
 			position[]={11589.41,23.650892,11957.459};
 			azimut=782.91302;
 			special="NONE";
-			id=207;
+			id=259;
 			side="EMPTY";
 			vehicle="Land_Laptop_unfolded_F";
 			leader=1;
@@ -4012,7 +7095,7 @@ class Mission
 			position[]={11566.088,23.651684,11981.559};
 			azimut=813.19458;
 			special="NONE";
-			id=208;
+			id=260;
 			side="EMPTY";
 			vehicle="Item_U_B_GhillieSuit";
 			leader=1;
@@ -4023,7 +7106,7 @@ class Mission
 		{
 			position[]={11545.628,23.695829,11978.041};
 			azimut=122.763;
-			id=209;
+			id=261;
 			side="EMPTY";
 			vehicle="Land_CampingTable_F";
 			skill=0.60000002;
@@ -4034,7 +7117,7 @@ class Mission
 			position[]={11544.646,23.697138,11978.592};
 			azimut=841.95599;
 			special="NONE";
-			id=210;
+			id=262;
 			side="EMPTY";
 			vehicle="Land_Laptop_unfolded_F";
 			leader=1;
@@ -4045,7 +7128,7 @@ class Mission
 		{
 			position[]={11543.95,23.70026,11974.401};
 			azimut=94.644096;
-			id=211;
+			id=263;
 			side="EMPTY";
 			vehicle="Land_CampingTable_F";
 			skill=0.60000002;
@@ -4056,7 +7139,7 @@ class Mission
 			position[]={11542.83,23.703215,11974.427};
 			azimut=813.83698;
 			special="NONE";
-			id=212;
+			id=264;
 			side="EMPTY";
 			vehicle="Land_Laptop_unfolded_F";
 			leader=1;
@@ -4067,7 +7150,7 @@ class Mission
 		{
 			position[]={11561.678,23.662905,11981.965};
 			azimut=124.95943;
-			id=213;
+			id=265;
 			side="EMPTY";
 			vehicle="RoadBarrier_F";
 			skill=0.60000002;
@@ -4075,7 +7158,7 @@ class Mission
 		class Item78
 		{
 			position[]={11307.961,30.628784,12179.771};
-			id=214;
+			id=266;
 			side="EMPTY";
 			vehicle="RoadBarrier_F";
 			skill=0.60000002;
@@ -4083,7 +7166,7 @@ class Mission
 		class Item79
 		{
 			position[]={11311.668,30.785801,12179.176};
-			id=215;
+			id=267;
 			side="EMPTY";
 			vehicle="RoadCone_L_F";
 			skill=0.60000002;
@@ -4091,7 +7174,7 @@ class Mission
 		class Item80
 		{
 			position[]={11303.936,30.447321,12179.587};
-			id=216;
+			id=268;
 			side="EMPTY";
 			vehicle="RoadCone_L_F";
 			skill=0.60000002;
@@ -4100,7 +7183,7 @@ class Mission
 		{
 			position[]={10677.242,16.758389,12267.737};
 			azimut=-140.23338;
-			id=217;
+			id=269;
 			side="EMPTY";
 			vehicle="RoadBarrier_F";
 			skill=0.60000002;
@@ -4109,7 +7192,7 @@ class Mission
 		{
 			position[]={10675.357,16.743845,12269.993};
 			azimut=-140.23338;
-			id=218;
+			id=270;
 			side="EMPTY";
 			vehicle="RoadCone_L_F";
 			skill=0.60000002;
@@ -4118,7 +7201,7 @@ class Mission
 		{
 			position[]={10679.702,16.771776,12265.842};
 			azimut=-140.23338;
-			id=219;
+			id=271;
 			side="EMPTY";
 			vehicle="RoadCone_L_F";
 			skill=0.60000002;
@@ -4127,7 +7210,7 @@ class Mission
 		{
 			position[]={11310.829,31.738142,12191.372};
 			azimut=194.49899;
-			id=220;
+			id=272;
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_armed_F";
 			leader=1;
@@ -4138,7 +7221,7 @@ class Mission
 		{
 			position[]={11319.339,32.617702,12201.859};
 			azimut=194.14999;
-			id=221;
+			id=273;
 			side="EMPTY";
 			vehicle="C_Hatchback_01_sport_F";
 			leader=1;
@@ -4149,7 +7232,7 @@ class Mission
 		{
 			position[]={11332.502,34.584583,12216.746};
 			azimut=231.661;
-			id=222;
+			id=274;
 			side="EMPTY";
 			vehicle="C_Hatchback_01_sport_F";
 			leader=1;
@@ -4160,7 +7243,7 @@ class Mission
 		{
 			position[]={11323.982,30.85206,12172.802};
 			azimut=273.66299;
-			id=223;
+			id=275;
 			side="EMPTY";
 			vehicle="Land_BarGate_F";
 			leader=1;
@@ -4172,7 +7255,7 @@ class Mission
 			position[]={11149.944,26.22851,12168.519};
 			azimut=309.86911;
 			special="NONE";
-			id=224;
+			id=276;
 			side="EMPTY";
 			vehicle="Land_BagFence_Long_F";
 			leader=1;
@@ -4182,7 +7265,7 @@ class Mission
 		{
 			position[]={11132.279,26.24408,12181.011};
 			azimut=102.23917;
-			id=225;
+			id=277;
 			side="EMPTY";
 			vehicle="RoadBarrier_F";
 			skill=0.60000002;
@@ -4191,7 +7274,7 @@ class Mission
 		{
 			position[]={11131.988,26.003752,12177.288};
 			azimut=82.27301;
-			id=226;
+			id=278;
 			side="EMPTY";
 			vehicle="RoadBarrier_F";
 			skill=0.60000002;
@@ -4200,7 +7283,7 @@ class Mission
 		{
 			position[]={11132.279,25.741539,12173.507};
 			azimut=263.19873;
-			id=227;
+			id=279;
 			side="EMPTY";
 			vehicle="RoadBarrier_F";
 			skill=0.60000002;
@@ -4209,7 +7292,7 @@ class Mission
 		{
 			position[]={11132.396,25.665623,12169.842};
 			azimut=263.19873;
-			id=228;
+			id=280;
 			side="EMPTY";
 			vehicle="RoadBarrier_F";
 			skill=0.60000002;
@@ -4218,7 +7301,7 @@ class Mission
 		{
 			position[]={11133.88,25.670418,12157.675};
 			azimut=84.014603;
-			id=229;
+			id=281;
 			side="EMPTY";
 			vehicle="Land_BarGate_F";
 			skill=0.60000002;
@@ -4228,7 +7311,7 @@ class Mission
 		{
 			position[]={11138.295,28.161884,12220.768};
 			azimut=118.239;
-			id=230;
+			id=282;
 			side="EMPTY";
 			vehicle="B_MRAP_01_F";
 			skill=0.60000002;
@@ -4237,7 +7320,7 @@ class Mission
 		{
 			position[]={11330.889,30.913031,12171.176};
 			azimut=284.61438;
-			id=231;
+			id=283;
 			side="EMPTY";
 			vehicle="Land_Sign_Mines_F";
 			leader=1;
@@ -4247,7 +7330,7 @@ class Mission
 		{
 			position[]={11328.856,30.890085,12173.044};
 			azimut=272.97934;
-			id=232;
+			id=284;
 			side="EMPTY";
 			vehicle="Land_Sign_WarningMilitaryArea_F";
 			leader=1;
@@ -4257,7 +7340,7 @@ class Mission
 		{
 			position[]={11328.583,30.952209,12165.483};
 			azimut=254.98999;
-			id=233;
+			id=285;
 			side="EMPTY";
 			vehicle="Land_Sign_WarningMilitaryVehicles_F";
 			leader=1;
@@ -4267,7 +7350,7 @@ class Mission
 		{
 			position[]={11093.541,25.773632,12214.867};
 			azimut=435.34613;
-			id=234;
+			id=286;
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_armed_F";
 			leader=1;
@@ -4277,7 +7360,7 @@ class Mission
 		{
 			position[]={11092.536,25.636566,12210.274};
 			azimut=435.34613;
-			id=235;
+			id=287;
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_armed_F";
 			leader=1;
@@ -4287,7 +7370,7 @@ class Mission
 		{
 			position[]={11095.902,25.818022,12207.433};
 			azimut=435.34613;
-			id=236;
+			id=288;
 			side="EMPTY";
 			vehicle="B_G_Offroad_01_armed_F";
 			leader=1;
@@ -4297,7 +7380,7 @@ class Mission
 		{
 			position[]={11113.929,27.214249,12220.094};
 			azimut=115.178;
-			id=237;
+			id=289;
 			side="EMPTY";
 			vehicle="Land_CampingTable_F";
 			skill=0.60000002;
@@ -4308,7 +7391,7 @@ class Mission
 			position[]={11112.873,27.163725,12220.504};
 			azimut=834.37097;
 			special="NONE";
-			id=238;
+			id=290;
 			side="EMPTY";
 			vehicle="Land_Laptop_unfolded_F";
 			leader=1;
@@ -4320,7 +7403,7 @@ class Mission
 			position[]={11140.851,27.027321,12193.422};
 			azimut=834.37097;
 			special="NONE";
-			id=239;
+			id=291;
 			side="EMPTY";
 			vehicle="Flag_FIA_F";
 			leader=1;
@@ -4331,7 +7414,7 @@ class Mission
 			position[]={11141.708,27.115555,12195.089};
 			azimut=834.37097;
 			special="NONE";
-			id=240;
+			id=292;
 			side="EMPTY";
 			vehicle="Flag_Altis_F";
 			leader=1;
@@ -4342,7 +7425,7 @@ class Mission
 			position[]={11142.6,27.221241,12196.753};
 			azimut=834.37097;
 			special="NONE";
-			id=241;
+			id=293;
 			side="EMPTY";
 			vehicle="Flag_AltisColonial_F";
 			leader=1;
@@ -4352,7 +7435,7 @@ class Mission
 		{
 			position[]={11100.199,26.595966,12233.396};
 			azimut=231.661;
-			id=242;
+			id=294;
 			side="EMPTY";
 			vehicle="RH_m4m16ammobox";
 			leader=1;
@@ -4362,7 +7445,7 @@ class Mission
 		{
 			position[]={11099.85,26.549234,12231.262};
 			azimut=295.67905;
-			id=243;
+			id=295;
 			side="EMPTY";
 			vehicle="HLC_AK_ammobox";
 			leader=1;
@@ -4372,7 +7455,7 @@ class Mission
 		{
 			position[]={11098.648,26.413021,12228.854};
 			azimut=231.661;
-			id=244;
+			id=296;
 			side="EMPTY";
 			vehicle="Flag_ARMEX_F";
 			leader=1;
@@ -4383,7 +7466,7 @@ class Mission
 			position[]={11122.258,25.249134,12152.675};
 			azimut=263.36548;
 			special="NONE";
-			id=245;
+			id=297;
 			side="EMPTY";
 			vehicle="Land_BagFence_Long_F";
 			leader=1;
@@ -4393,7 +7476,7 @@ class Mission
 		{
 			position[]={11160.418,30.541592,12259.828};
 			azimut=476.04099;
-			id=246;
+			id=298;
 			side="EMPTY";
 			vehicle="B_MBT_01_cannon_F";
 			leader=1;
@@ -4404,7 +7487,7 @@ class Mission
 		{
 			position[]={11165.261,30.617262,12254.884};
 			azimut=659.41125;
-			id=247;
+			id=299;
 			side="EMPTY";
 			vehicle="Land_Sign_WarningMilitaryVehicles_F";
 			leader=1;
@@ -4415,7 +7498,7 @@ class Mission
 		{
 			position[]={10993.628,20.761383,12948.066};
 			azimut=-11.31823;
-			id=248;
+			id=300;
 			side="EMPTY";
 			vehicle="RoadBarrier_F";
 			skill=0.60000002;
@@ -4424,7 +7507,7 @@ class Mission
 		{
 			position[]={10996.565,20.738283,12948.126};
 			azimut=-11.31823;
-			id=249;
+			id=301;
 			side="EMPTY";
 			vehicle="RoadCone_L_F";
 			skill=0.60000002;
@@ -4433,7 +7516,7 @@ class Mission
 		{
 			position[]={10990.598,20.775673,12947.35};
 			azimut=-11.31823;
-			id=250;
+			id=302;
 			side="EMPTY";
 			vehicle="RoadCone_L_F";
 			skill=0.60000002;
@@ -4442,7 +7525,7 @@ class Mission
 		{
 			position[]={10988.781,20.737116,12952.793};
 			azimut=176.0766;
-			id=251;
+			id=303;
 			side="EMPTY";
 			vehicle="Land_Wreck_Skodovka_F";
 			skill=0.60000002;
@@ -4451,7 +7534,7 @@ class Mission
 		{
 			position[]={10995.963,20.676064,12960.82};
 			azimut=36.116402;
-			id=252;
+			id=304;
 			side="EMPTY";
 			vehicle="Land_Wreck_Car_F";
 			skill=0.60000002;
@@ -4461,7 +7544,7 @@ class Mission
 		{
 			position[]={10984.369,21.130718,13028.878};
 			azimut=-11.31823;
-			id=253;
+			id=305;
 			side="EMPTY";
 			vehicle="RoadBarrier_F";
 			skill=0.60000002;
@@ -4470,7 +7553,7 @@ class Mission
 		{
 			position[]={10987.307,21.127518,13028.938};
 			azimut=-11.31823;
-			id=254;
+			id=306;
 			side="EMPTY";
 			vehicle="RoadCone_L_F";
 			skill=0.60000002;
@@ -4479,7 +7562,7 @@ class Mission
 		{
 			position[]={10981.339,21.126158,13028.161};
 			azimut=-11.31823;
-			id=255;
+			id=307;
 			side="EMPTY";
 			vehicle="RoadCone_L_F";
 			skill=0.60000002;
@@ -4487,7 +7570,7 @@ class Mission
 		class Item120
 		{
 			position[]={10984.369,20.877417,13006.241};
-			id=256;
+			id=308;
 			side="EMPTY";
 			vehicle="Land_Wreck_Truck_dropside_F";
 			skill=0.60000002;
@@ -4496,7 +7579,7 @@ class Mission
 		{
 			position[]={10992.655,20.624825,12983.889};
 			azimut=201.627;
-			id=257;
+			id=309;
 			side="EMPTY";
 			vehicle="B_MRAP_01_F";
 			skill=0.60000002;
@@ -4506,7 +7589,7 @@ class Mission
 		{
 			position[]={14212.724,18.34234,18260.514};
 			azimut=137.759;
-			id=258;
+			id=310;
 			side="EMPTY";
 			vehicle="Land_CampingTable_F";
 			skill=0.60000002;
@@ -4517,7 +7600,7 @@ class Mission
 			position[]={14211.909,18.351477,18261.287};
 			azimut=856.95203;
 			special="NONE";
-			id=259;
+			id=311;
 			side="EMPTY";
 			vehicle="Land_Laptop_unfolded_F";
 			leader=1;
@@ -4528,7 +7611,7 @@ class Mission
 		{
 			position[]={14041.836,27.113663,18711.467};
 			azimut=62.834702;
-			id=260;
+			id=312;
 			side="EMPTY";
 			vehicle="Land_CampingTable_F";
 			skill=0.60000002;
@@ -4539,7 +7622,7 @@ class Mission
 			position[]={14040.881,27.144743,18710.881};
 			azimut=782.02802;
 			special="NONE";
-			id=261;
+			id=313;
 			side="EMPTY";
 			vehicle="Land_Laptop_unfolded_F";
 			leader=1;
@@ -4552,7 +7635,7 @@ class Mission
 			azimut=880.17499;
 			offsetY=1;
 			special="NONE";
-			id=262;
+			id=314;
 			side="EMPTY";
 			vehicle="Box_NATO_WpsSpecial_F";
 			leader=1;
@@ -4563,7 +7646,7 @@ class Mission
 		class Item127
 		{
 			position[]={11127.896,28.198223,12228.384};
-			id=263;
+			id=315;
 			side="EMPTY";
 			vehicle="FirePlace_burning_F";
 			skill=0.60000002;
@@ -4571,7 +7654,7 @@ class Mission
 		class Item128
 		{
 			position[]={11100.436,26.319525,12215.354};
-			id=264;
+			id=316;
 			side="EMPTY";
 			vehicle="FirePlace_burning_F";
 			skill=0.60000002;
@@ -4579,7 +7662,7 @@ class Mission
 		class Item129
 		{
 			position[]={11163.468,30.428474,12248.76};
-			id=265;
+			id=317;
 			side="EMPTY";
 			vehicle="FirePlace_burning_F";
 			skill=0.60000002;
@@ -4631,7 +7714,7 @@ class Mission
 	};
 	class Sensors
 	{
-		items=9;
+		items=10;
 		class Item0
 		{
 			position[]={11581.314,23.16209,11903.199};
@@ -4766,6 +7849,20 @@ class Mission
 			expActiv="hn setDamage 1";
 			class Effects
 			{
+			};
+		};
+		class Item9
+		{
+			position[]={12176.513,106.4414,7949.6006};
+			a=6000;
+			rectangular=1;
+			activationBy="WEST";
+			interruptable=1;
+			age="UNKNOWN";
+			class Effects
+			{
+				soundDet="BattlefieldFirefight";
+				track="LeadTrack04_F_EPB";
 			};
 		};
 	};
