@@ -31,4 +31,4 @@ Development
 
 Current version:
 
-0.99 DEV
+0.996 DEV
