@@ -10,3 +10,4 @@ HLC AK by Toadie*
 *Requires additional downloads: ASDG Joint Rails, HLC Core
 
 Original modification The CSAT Modification Project © TheEvanCat 2014.
+Modified and published with written permission.

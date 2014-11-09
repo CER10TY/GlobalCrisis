@@ -9,15 +9,15 @@ author = "tryteyker";
 
 class CfgHints
 {
-	class MissionIntro
+	class Mission
 	{
 		displayName = "Mission Introduction - Global Crisis";
 		class MissionIntro1
 		{
 			displayName = "Welcoming Statement";
 			displayNameShort = "Welcome to ""Global Crisis""";
-			description = "Welcome, %11. Whilst you enjoy the boat and helicopter ride to the base, allow me to lay out what this mission is about. In this mission, you'll be seeing the introduction of ISI Agent Dariush Gilani.  There are laptops spread throughout the mission that will give you Intel about him and other important characters.";
-			tip = "The base at the AAC Airfield will allow you to restock your ammunition as well as acquire weapons.";
+			description = "Welcome, %11. Whilst you enjoy the helicopter ride to the base, allow me to lay out what this mission is about. In this mission, you'll be seeing the introduction of ISI Agent Dariush Gilani. This mission employs a fair amount of built-in features like the Virtual Arsenal, dialogs aswell as a variety of sound and visual effects.";
+			tip = "Creating custom content for this mission is quick and easy, if you are up for the task. Look into the Briefing for more info.";
 			arguments[] = {profileName};
 			image = "";
 			noImage = false;
@@ -32,10 +32,6 @@ class CfgHints
 			image = "";
 			noImage = false;
 		};
-	};
-	class CIAIntro 
-	{
-		displayName = "Introduction to the CIA";
 		class Dariush
 		{
 			displayName = "Introduction: Dariush Gilani";
@@ -49,21 +45,51 @@ class CfgHints
 		class GlobalRelations
 		{
 			displayName = "Global Relations";
-			displayNameShort = "Current Global Relations (Pt. 1 / 4)";
+			displayNameShort = "Current Global Relations (Pt. 1/4)";
 			description = "Pakistan and the United States of America have entered an alliance, permanently smoothing relations after the DEVGRU/CIA performed a paramilitary operation on Pakistan's soil to kill Osama bin Laden. Iran is secluded from the world, performing a variety of operations on Altian and Stratian soil.";
 			tip = "Whilst Iran may be secluded and seem very out-of-touch, they still possess high-end technology and are a force to be reckoned with.";
 			arguments[] = {};
 			image = "";
 			noImage = false;
+			class GlobalRelations2
+			{
+				displayName = "Global Relations";
+				displayNameShort = "Current Global Relations (Pt. 2/4)";
+				description = "With the Resistance fighters taking up arms left behind during previous wars, the Revolutionary Guard faces a tough enemy when engaging in firefights. Officially, however, these fighters are not endorsed by the CIA nor ISI. The Resistance has won somewhat significant ground recently, but has to employ guerrilla tactics.";
+				tip = "Look around the Resistance's temporary HQ - valuable goods may be found.";
+				arguments[] = {};
+				image = "";
+				noImage = false;
+			};
+			class GlobalRelations3
+			{
+				displayName = "Global Relations";
+				displayNameShort = "Current Global Relations (Pt. 3/4)";
+				description = "Resistance fighters have independently established themselves as a force on the ground, and as such have been included in global political talks when the topics on meetups shift to Altis. This usually happens behind closed doors, with no government to ever acknowledge these fighters in public. However, as is common for such a resistance force, they lack political representatives and are missing out on the global playing field.";
+				tip = "";
+				arguments[] = {};
+				image = "";
+				noImage = false;
+			};
 		};
 		class NavMC
 		{
 			displayName = "Navigation: Mission Control";
 			displayNameShort = "Navigating Mission Control";
 			description = "You will have a fixed list of missions available in the list once you open Mission Control. The interface is simple and to the point. To accept a mission, hold Shift and press Enter. You will then receive tasks accordingly. To exit Mission Control, simply press ESC once.";
-			tip = "By completing tasks you will unlock more missions in the MC.";
+			tip = "Any dialog that is open can ble closed by pressing Escape (ESC)";
 			arguments[] = {};
 			image ="img\CIALogo.paa";
+			noImage = false;
+		};
+		class Drones
+		{
+			displayName = "Equipment: Drones"
+			displayNameShort = "Drones as Equipment";
+			description = "By now you will have used drones already. These unmanned flying objects are immensely useful when on a manhunt, however large scale it is. With Thermal Vision they can spot out enemy combatants in a matter of seconds, and eliminate them provided they have missiles equipped. This makes town sweeps a simple task when drones are used properly.";
+			tip = "The drone above Athira is always accessible provided you have a handheld Terminal.";
+			arguments[] = {};
+			image = "";
 			noImage = false;
 		};
 	};
@@ -80,5 +106,18 @@ class CfgUnitInsignia
 	{
 		displayName = "United States Naval Special Warfare Development Group";
 		texture = "img\DEVGRUInsignia.paa";
+	};
+};
+
+class CfgIdentities
+{
+	class Dariush
+	{
+		name = "Dariush Gilani";
+		nameSound = "Ghost";
+		face = "PersianHead_A3_01";
+		glasses = "G_Squares_Tinted";
+		speaker = "Male01ENGB";
+		pitch = 0.9;
 	};
 };

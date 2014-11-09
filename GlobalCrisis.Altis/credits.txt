@@ -1,0 +1,10 @@
+Mission created by tryteyker with the help of the general editing community over at
+http://www.forums.bistudio.com/forumdisplay.php?162-ARMA-3-MISSION-EDITING-amp-SCRIPTING
+
+Github: https://www.github.com/CER10TY
+
+About the author: http://www.about.me/soren_johansson
+
+Bohemia Profile: http://www.forums.bistudio.com/member.php?73020-tryteyker
+
+Contribute to this mission: https://www.github.com/CER10TY/GlobalCrisis

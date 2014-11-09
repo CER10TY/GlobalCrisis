@@ -21,7 +21,7 @@ switch _mission do {
 		// == Enable drone, set position.
 		_droneScript_PartOne = [ciadrone] execVM "drone.sqf";
 		_afrwedd = player createSimpleTask ["afrwed"];
-		_afrwedd setSimpleTaskDescription ["This is a straight-forward mission. A high profile target is meeting with the local garrison commander in Athira, so this is the time to strike. Be vigilant, as the meeting may have already ended when you connect, so both parties may be scattered throughout Athira. Keep an eye out for a Hatchback, as that is the VIP's car. Civilian casualties are expected.", "Drone Strike - Athira", "Drone Strike"];
+		_afrwedd setSimpleTaskDescription ["This is a straight-forward mission. A high profile target is meeting with the local garrison commander in Athira, so this is the time to strike. They are meeting at the town center, by a truck. Be vigilant, as the meeting may have already ended when you connect, so both parties may be scattered throughout Athira. Keep an eye out for a Hatchback, as that is the VIP's car. Civilian casualties are expected.", "Drone Strike - Athira", "Drone Strike"];
 		_afrwedd setSimpleTaskDestination (getmarkerPos "africanwedding");
 		_afrwedd setTaskState "ASSIGNED";
 		player setCurrentTask _afrwedd;
@@ -43,7 +43,7 @@ switch _mission do {
 		["TaskSucceeded",["","African Wedding"]] call BIS_fnc_showNotification;
 		_r = player addRating 999999; // To prevent player going rogue if he hit the civie mass.
 		// == Adding second part
-		["athirasweep"] execVM "ciamc\add-mission.sqf";
+		["athirasweep"] execVM "missions\add-mission.sqf";
 		sleep 1;
 		player connectTerminalToUAV objNull;
 		// == Removing stationary part of drone.
@@ -97,4 +97,10 @@ switch _mission do {
 		_ath setTaskState "SUCCEEDED";
 		["TaskSucceeded",["","Athiran Sweep"]] call BIS_fnc_showNotification;
 	};
+	/*
+	case "examplemission":
+	{
+		comment "THIS IS AN EXAMPLE CODEBLOCK, NOTHING IS HERE";
+	};
+	*/
 };

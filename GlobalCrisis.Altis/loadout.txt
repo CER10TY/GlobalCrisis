@@ -180,3 +180,52 @@ this linkItem "ItemRadio";
 comment "Set identity";
 this setFace "AfricanHead_03";
 this setSpeaker "Male11ENG";
+
+
+// == CIA foot
+
+comment "Exported from Arsenal by tryteyker";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "Niko_USA_TigerOD";
+for "_i" from 1 to 5 do {this addItemToUniform "30Rnd_556x45_Stanag";};
+this addVest "Niko_USA_PlateCarrierH_M81";
+for "_i" from 1 to 3 do {this addItemToVest "HandGrenade";};
+for "_i" from 1 to 3 do {this addItemToVest "SmokeShell";};
+this addItemToVest "SmokeShellGreen";
+for "_i" from 1 to 2 do {this addItemToVest "16Rnd_9x21_Mag";};
+for "_i" from 1 to 10 do {this addItemToVest "30Rnd_556x45_Stanag";};
+this addBackpack "B_Carryall_oli";
+for "_i" from 1 to 3 do {this addItemToBackpack "FirstAidKit";};
+for "_i" from 1 to 4 do {this addItemToBackpack "30Rnd_9x21_Mag";};
+for "_i" from 1 to 6 do {this addItemToBackpack "HandGrenade";};
+this addItemToBackpack "SatchelCharge_Remote_Mag";
+for "_i" from 1 to 6 do {this addItemToBackpack "30Rnd_556x45_Stanag";};
+for "_i" from 1 to 8 do {this addItemToBackpack "30Rnd_556x45_Stanag_Tracer_Red";};
+for "_i" from 1 to 2 do {this addItemToBackpack "Chemlight_green";};
+
+comment "Add weapons";
+this addWeapon "RH_M16A4";
+this addPrimaryWeaponItem "RH_saker";
+this addPrimaryWeaponItem "acc_pointer_IR";
+this addPrimaryWeaponItem "RH_eotech553";
+this addWeapon "hgun_P07_F";
+this addHandgunItem "muzzle_snds_L";
+this addWeapon "Laserdesignator";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "ItemGPS";
+this linkItem "NVGoggles_BLUFOR";
