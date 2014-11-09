@@ -5,6 +5,7 @@
 onLoadMission = "Welcome, Dariush Gilani.";
 onLoadMissionTime = 1;
 loadScreen = "img\CIAlogo.paa";
+enableDebugConsole = 1;
 author = "tryteyker";
 
 class CfgHints

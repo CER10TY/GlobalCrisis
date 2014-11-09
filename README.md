@@ -31,4 +31,4 @@ Development
 
 Current version:
 
-1.0 RC
+1.01 RC
