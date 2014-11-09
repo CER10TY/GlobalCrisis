@@ -92,7 +92,7 @@ class Mission
 	randomSeed=7203439;
 	class Intel
 	{
-		briefingName="Global Crisis - v0.999DEV";
+		briefingName="Global Crisis";
 		overviewText="You are Dariush Gilani - An ISI Operative working with the CIA and DEVGRU.";
 		startWeather=0.29999998;
 		startWind=0.099999994;
@@ -120,8 +120,9 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={12734.151,-0.11443679,5631.5786};
+					position[]={12771.832,-0.00034368399,5565.8037};
 					azimut=334.80399;
+					offsetY=1000;
 					special="NONE";
 					id=0;
 					side="WEST";
