@@ -32,3 +32,4 @@ Development
 Current version:
 
 1.0 RC
+=======
